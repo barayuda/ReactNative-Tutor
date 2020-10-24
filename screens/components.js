@@ -4,67 +4,27 @@ import { Card, Button,Icon } from 'react-native-elements'
 
 export default function Component({ navigation }) {
     
-    const presshandler = ()=>{
-            //navigation.navigate('About'); or 
-            navigation.push('Detail_Component');
-          // else if(id==2){navigation.push('Components');} // theres also a pop function like push .. 
-
-    }
+    const data = [{title:"Getting Started",id:1}, {title:"Core Components",id:2}, {title:"State Hooks and Props",id:3},{title:"Storage In React Native",id:4},{title:"Permissions In React Native",id:5},{title:"React Native Navigation",id:6},{title:"Open Source Libraries",id:7}];
+    const presshandler = (id)=>{navigation.push('DComponent',{id:id});}
     
     return (
         <ScrollView>
+        <Card>
+              <Card.Title >Step By Step Tutorials</Card.Title>
+                  <Card.Divider/>
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/tu.png')} />             
+              </Card>
+        {
+          data.map( (title)=> 
+          <Card>
+         <Button 
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
+              title={title.title}  id={title.id} onPress={()=>presshandler(title.id)}/>
+          </Card>
           
-          <Card>
-          <Card.Title>Getting Started</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-          <Card>
-          <Card.Title>Built-In Components</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-
-          <Card>
-          <Card.Title>State, Hooks and Props</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-
-          <Card>
-          <Card.Title>Styled Components</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-          <Card>
-          <Card.Title>Animations In ReactNative</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-          <Card>
-          <Card.Title>Navigation</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-
+          )
+        }
+        
         </ScrollView>
     );
   }

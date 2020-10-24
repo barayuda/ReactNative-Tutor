@@ -6,10 +6,10 @@ import { Card, Button,Icon } from 'react-native-elements'
 export default function Home({ navigation }) {
    
   const data = [
-    {title: "About ReactNative",source:require("../assets/raw_images/about-us.png"),info:" Learn About the basics of React Native, Why you should use react Native .. ", id:1},
-    {title: "Basic Components",source:require("../assets/raw_images/components-s.png"),info:" Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
-    {title: "Creative Applications",source:require("../assets/raw_images/mobile-app-2.png"),info:" Learn how to create applications with ReactNative .. How to create mobile apps and much more .", id:3},
-    {title: "Connect With People",source:require("../assets/raw_images/startup-connection.png"),info:"  Find Jobs and Connect with the React Community ..Get to know people with similar interests .", id:4}
+    {title: "About ReactNative",source:require("../assets/raw_images/reactlogo.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
+    {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/ab.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
+    {title: "Find React Jobs",source:require("../assets/raw_images/jobs.png"),info:"Learn how to create applications with ReactNative .. How to create mobile apps and much more .", id:3},
+    {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Find Jobs and Connect with the React Community ..Get to know people with similar interests .", id:4}
   ]
   
     const presshandler = (id)=>{
@@ -34,7 +34,7 @@ export default function Home({ navigation }) {
             {props.info}
         </Text>
         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
               title='Learn More' id ={props.id} onPress={()=> presshandler(props.id)}/>
         </Card>);
   }

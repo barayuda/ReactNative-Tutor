@@ -1,28 +1,16 @@
 import * as React from 'react';
-import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
-import { Card, Button,Icon } from 'react-native-elements'
+import { StyleSheet, View, Text, ScrollView, Image,Dimensions } from 'react-native';
+import { WebView } from 'react-native-webview';
 
-export default function DApplication({ navigation }) {
-    
-    const presshandler = ()=>{
-            //navigation.navigate('About'); or 
-            //navigation.push('Detail_Component');
-          // else if(id==2){navigation.push('Components');} // theres also a pop function like push .. 
-
-    }
-    
+export default function DApplication({ route, navigation }) {
+  if(route.params.setq==0){
     return (
-        <ScrollView>
-          
-          <Card>
-          <Card.Title>Detailed Application</Card.Title>
-          <Card.Divider/>
-         <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#ffbe55"}}
-              title='Learn More'  onPress={presshandler}/>
-          </Card>
-
-        </ScrollView>
+      <WebView startInLoadingState={true} originWhitelist={['*']} source={{html:route.params.link}} style={{flex:1,height:Dimensions.get('window').height,width:Dimensions.get('window').width}}/> 
+     )
+  }  
+  else if(route.params.setq==1){
+  return (
+     <WebView startInLoadingState={true} originWhitelist={['*']} source={{uri:route.params.link}} style={{flex:1,height:Dimensions.get('window').height,width:Dimensions.get('window').width}}/> 
     );
   }
-  
+}

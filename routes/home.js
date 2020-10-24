@@ -15,13 +15,13 @@ export default function MyStack(){
     return(
       <NavigationContainer>  
         <HomeStack.Navigator>
-        <HomeStack.Screen name="Home" component={Home} />
-        <HomeStack.Screen name="About" component={About} />
-        <HomeStack.Screen name="Component" component={Component} />
-        <HomeStack.Screen name="DComponent" component={DComponent} />
-        <HomeStack.Screen name="Application" component={Application} />
-        <HomeStack.Screen name="DApplication" component={DApplication} />
-        <HomeStack.Screen name="Connect" component={Connect} />
+        <HomeStack.Screen title="React Native Tutor" name="Home" component={Home} />
+        <HomeStack.Screen name="About" component={About} options={{headerTitle:"About React Native"}} />
+        <HomeStack.Screen name="Component" component={Component} options={{headerTitle:"Learn React Native"}}/>
+        <HomeStack.Screen name="DComponent" component={DComponent} options={{headerTitle:"Tutorial"}}/>
+        <HomeStack.Screen name="Application" component={Application} options={{headerTitle:"React Jobs"}}/>
+        <HomeStack.Screen name="DApplication" component={DApplication} options={{headerTitle:"React Native Tutor"}} />
+        <HomeStack.Screen name="Connect" component={Connect} options={{headerTitle:"Deploy App"}} />
         </HomeStack.Navigator>
       </NavigationContainer>
     );

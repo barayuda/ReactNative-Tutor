@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { StyleSheet, Text, View, PermissionsAndroid, TextInput, ActivityIndicator,FlatList, Alert } from "react-native";
 import { Card, Button,Icon } from 'react-native-elements'
 
-export default function Application({ navigation }) {
+export default function NW() {
   const [isLoading, setLoading] = useState(true);
   const [data, setD] = useState([]);
   const url = 'https://jobs.github.com/positions.json?search=react' 
@@ -23,8 +23,8 @@ export default function Application({ navigation }) {
         {title:"",para:""},
     ]
     const regex = /(<([^>]+)>)/ig;
-    const presshandler = (link)=>{ 
-      navigation.push('DApplication',{link:link,setq:1});
+    const presshandler = ()=>{ 
+      
     }
     return (
 
@@ -49,7 +49,8 @@ export default function Application({ navigation }) {
                     title='View Full Description'  onPress= {()=> Alert.alert("Job Description",item.description.replace(regex,''))} /> 
                  <Button 
                     buttonStyle={{borderRadius: 0, padding:10, marginTop:10,marginLeft: 0, marginRight: 0, marginBottom: 5,backgroundColor:"#6C63FF"}}
-                    title='Apply Online Now' onPress={()=> presshandler(item.url)} /> 
+                    title='Apply Online Now' onPress={presshandler} /> 
+                 
                   </View>                 
               </Card>
               </View>       
@@ -59,5 +60,4 @@ export default function Application({ navigation }) {
     </View>
      
     );
-}
-  
+  }
