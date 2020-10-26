@@ -639,7 +639,33 @@ npm install
 npm start 
 ```
 
+## Inspiration 
+I started this repository as a tutorial, which later converted into a full-fledged React Native app. All of this was possible because of the open-source libraries that have been developed by the React Native community and React Native official documentation. Do check them out - 
 
+#### Expo 
+<a href="https://docs.expo.io">Link: https://docs.expo.io/</a>
+
+#### React Native Elements 
+<a href="https://reactnativeelements.com/">Link: https://reactnativeelements.com/</a>
+
+#### React Navigation 
+<a href="https://reactnavigation.org/">Link:https://reactnavigation.org/</a>
+
+#### Async Storage 
+<a href="https://react-native-async-storage.github.io/async-storage/">Link: https://react-native-async-storage.github.io/async-storage/</a>
+
+#### WebView
+<a href="https://github.com/react-native-webview/react-native-webview">Link: https://github.com/react-native-webview/react-native-webview</a>
+
+#### Github Gists
+<a href="https://gist.github.com/">Link: https://gist.github.com/<a>
+  
+#### Github Jobs Api 
+<a href="https://jobs.github.com/api">Link: https://jobs.github.com/api</a>
+
+  
+#### React Native Documentation 
+<a href="https://reactnative.dev/">Link: https://reactnative.dev/ </a>
 
 
 
