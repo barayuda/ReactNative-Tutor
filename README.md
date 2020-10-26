@@ -11,7 +11,7 @@ The tutorial aims to help JavaScript developers to build mobile apps (iOS and An
 - What is React Native? What are its pros and cons? 
 - Step by step tutorial to develop a React Native mobile app
 - How to boost productivity as a ReactNative Developer?
-- How to deploy a React Native app on Google Play Store and Apple App Store? 
+- A closer look into ReactNative Tutor.  
 
 So without wasting any more second, let us get started.  
 
@@ -506,7 +506,7 @@ export default function App() {
 }
 ```
 
-### Navigation
+### Navigation 
 Navigating through screens is a necessary part of any mobile application. It is vital for every mobile application. We all can agree with that, I am sure. However, for mobile applications, React Native does not provide a standard way or approach to solving the problem of navigating through different screens. Therefore, there are various options out there on the web to get the job done. 
 
 #### Different Navigation Solutions
@@ -530,6 +530,55 @@ In this tutorial, we will briefly discuss <b>React Navigation</b>, a third-party
 #### Stack Navigator 
 In StackNavigator, we place a new screen on top of a stack in StackNavigator. ReactNative Tutor uses a StackNavigator as a navigator solution to navigate through different screens. So, we will try to replicate it in this tutorial. 
 
+```
+Stack Navigator Code ... 
+```
+
+### Top React Native Packages To Boost Developer Productivity 
+Developers all around the world use open-source libraries in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. I am sure about the fact that almost every app on the Google play store and Apple App Store use at least one open-source library. If not, then I feel sorry for the developer. Even I have used two open-source libraries in ReactNative Tutor:
+
+- React Native Elements
+- React Navigation
+
+Here, we will discuss the top 5 React Native libraries that are widely used by Developers in their React Native projects. 
+
+#### React Native Elements
+It is a cross-platform UI toolkit for React Native. It has more than 19.6k stars on GitHub and provides a useful set of reusable components for React Native applications. 
+
+Link: <a href="https://github.com/react-native-elements/react-native-elements">https://github.com/react-native-elements/react-native-elements</a>
+
+#### React Navigation
+Navigation is an essential part of every application. React Native does not provide a standard way to navigate through screens in the applications. Therefore, there are many routing and navigation libraries out there on the web. React Navigation is one of them. Honestly, It's the best I have used up till now. It has more than 18k stars on Github.
+
+Link: <a href="https://github.com/react-navigation/react-navigation">https://github.com/react-navigation/react-navigation</a>
+
+#### React Native Animatable
+Every app needs Animation. It makes a mobile app visually appealing. It is the easiest way to make an app not only cool but also enhances the user experience. From Onboarding screens to laying out the layouts on the screen, it is used almost everywhere in the app. React Native Animatable is one of them. It has more than 8k stars on Github and provides easy to use animations for React Native applications.  
+
+Link: <a href="https://github.com/oblador/react-native-animatable">https://github.com/oblador/react-native-animatable</a>
+
+#### React Native Localize
+The library provides the simplest and easiest way to internationalize the React Native app. With more than 1.3K stars on Github, it helps developers localize the app. 
+
+Link: <a href="https://github.com/zoontek/react-native-localize">https://github.com/zoontek/react-native-localize</a>
+
+#### Prop Types
+Prop-types is a package that allows developers to add runtime type checking to the components that ensure the types of props passed to Components are correct. It is genuinely a useful package that enhances my development experience. It has more than 3.6k stars on Github. 
+
+Link: <a href="https://github.com/facebook/prop-types">https://github.com/facebook/prop-types</a>
+
+Apart from the above, there are tons of other useful libraries out there on the web. Search on your own according to your own need. We can also develop a library if something is not available already. 
+
+## ReactNative Tutor
+If you like the above tutorial, then you would love React Native Tutor. A full-fledged mobile app for aspiring developers who want to learn React Native. Features of the app include - 
+
+- More than 10+ step by step written tutorials (beginner to advanced) along with examples and code (embedded private Github Gists) that help people become React Native Ninja. 
+
+- Exclusive tutorial on topics like Async Storage and Permissions and Deploying React Native app on Google Play Store and Apple App Store
+
+- Find New React Jobs (worldwide) every day and Apply online instantaneously.  
+
+- Beautiful UI   
 
 
 
