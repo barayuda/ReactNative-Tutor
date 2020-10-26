@@ -178,7 +178,7 @@ We will also need to install the Expo app on the ios and Android phone to test o
 
 Open the app and scan the QR code that appears in the Metro Bundler to test the app.
 
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.jpg?raw=true "Title")
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
 
 Change the text in the app.js file to HelloWorld to get the desired result. 
 
@@ -215,6 +215,8 @@ We provide styles to the View component via the Stylesheet. Stylesheet in ReactN
 #### Text 
 The text component, in many ways, is just like the View component, except that it is specifically available to display text. Also, like a View component, it supports styling.   
 
+#### Example
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
 #### Code
 
 ```
@@ -245,6 +247,19 @@ const styles = StyleSheet.create({
   },
 });
 ```
+##### Explanation
+
+The above code snippet is a typical pattern style that you will see quite often in React Native. Let us understand the code line by line.  
+
+import React from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+
+The first line import the modules required to run the app using React Library. The second line imports the specific module from the React Native core Library. In the above code, we are importing Stylesheet, Text, and View Component. 
+
+export default function func_name(){
+return ( // View )}
+
+As we know from above that the ReactNative App consists of components. These are the visual blocks that we see on the screen. The above code is a standard way of creating a function-based that can be used anywhere within the app. 
 
 #### ScrollView 
 As the name suggests, it provides a solution to scrolling content across any screen height. It supports both vertical and horizontal scrolling along with an optional option to pinch to zoom feature. 
@@ -252,6 +267,8 @@ As the name suggests, it provides a solution to scrolling content across any scr
 #### Flat List
 It is a component that allows developers to present a list of similarly structured data items in a scrollable way. It is generally preferred over the scroll view when the number of data items in the list changes over time. 
 
+#### Example
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
 ### Code
 ```
 import React from 'react';
@@ -281,12 +298,18 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
-```
+``` 
+The above code snippet is pretty much self-explanatory. 
+First, we import the module ScrollView from the react-native library. Next, we create a function-based component where we add Views to the ScrollView Component. In the above code, we add list items to the ScrollView Component with an array with the help of JSX. We pass style as a prop to the text component that takes an object created using the StyleSheet component.  
+
 #### Image
 It is a component that provides a way to display images on the screen. It supports images from any format. One can get the picture from either the local storage or the network. 
 
 #### Dimensions 
 The dimension component of ReactNative allows the developers to get the dimensions of the application's window / mobile screen. It may change according to device rotation and type.
+
+#### Example
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
 
 #### Code
 
@@ -312,6 +335,7 @@ const styles = StyleSheet.create({
   }
 });
 ```
+In the above code snippet, we load an image stored in the assets folder of our project directory. The image component of the React Native takes source as a prop using which we can add our pictures to the screen.  We set the image width and height using the Dimensions component provided by the React Native library that contains methods to capture the dimensions of the application window.
 
 #### Button
 As the name suggests, the button component is the easiest way to allow the developers to provide a way for their users, handle touch gestures on the mobile screen. 
@@ -327,6 +351,9 @@ ToastAndroid component of ReactNative exposes the Android platform's ToastAndroi
 
 #### Alert 
 Alert Component of React Native provides an Alert box with title and message. It can be merely compared to a dialogue box, as seen on Android or iOS devices. It has an option to provide optional buttons for users to interact.
+
+#### Example
+--- image 
 
 #### Code
 
@@ -359,6 +386,7 @@ const styles = StyleSheet.create({
   tinput:{ padding:10, marginBottom:5,fontSize:15 }
 });
 ```
+The above code snippet is pretty much self-explanatory. The Button component of ReactNative takes style, title, and onPress props.  In the above code, we pass methods as props that display an alert message and toast message (Android) on the button click. We check the information on the platform by using the Platform component of React Native. 
 
 ### Props, State and Hooks 
 
@@ -371,8 +399,8 @@ For instance: In Text(core component), style is a prop provided by React Native.
 
 The only thing to remember is that we can pass data or functions as props. With props and core components combined, we can create a wide variety of stunning visuals for our app by reutilizing one component with different props as parameters whenever required. Let us look at a simple example:
 
-In the above code snippet, we have developed a customized core React Native component <Text> to <MyComponent>, where we can <addtext> as a prop.
-
+#### Example
+--img 
 #### Code
 
 ```
@@ -406,6 +434,8 @@ const styles = StyleSheet.create({ viewstyle:{ flex:1, margin:10 },
   }
 });
 ```
+In the above code snippet, we have customized core ReactNative component MyComponent that takes prop 'addtext' as a parameter. It is a fundamental principle concept provided by React that ensures code reusability. MyComponent is a customized component that can be used anywhere within the app using the import statement.   
+
 #### State
 We use a state for the data that is going to change over time. Consider state as mutable while props immutable in a React Native App.   
 
@@ -415,6 +445,8 @@ Hooks in React are functions that allow developers to use React state and a comp
 #### Difference between Props and State and When to use what? 
 Props, in general, are immutable and are fixed throughout the lifetime of the component. State, on the other hand, is mutable and can be changed at any time in the future. 
 
+#### Example
+--img 
 #### Code
 
 ```
@@ -446,65 +478,7 @@ const styles = StyleSheet.create({
     borderRadius:20},
 });
 ```
-
-### Permissions
-
-Permission modal for users varies from platform to platform. However, in here, we will look at how to ask for permissions in ReactNative, specific to the Android Platform. 
-
-In Android, SDK level 23 (Marshmallow), and above, there are two types of permissions - one that needs to add in the manifest file, which the user grants at the time of installation of the app, and second that the developers need to ask at the runtime for granting permission. These permissions not only needs to be included in the manifest file but also has to include at the runtime. These permissions that require a dialogue prompt at the run time is called Dangerous Permissions.
-
-Some of them that we will see in this tutorial are as follows:
-
-<b>CAMERA</b>
-
-<b>READ_CONTACTS</b>
-
-<b>WRITE_CONTACTS</b>
-
-<b>RECORD_AUDIO</b>
-
-<b>READ_EXTERNAL_STORAGE</b>
-
-<b>WRITE_EXTERNAL_STORAGE, and many more.</b> 
-
-Let us look at each of them with the help of an example. 
-
-#### Code
-
-```
-import React, { useState } from "react";
-import { StyleSheet, Text, View, PermissionsAndroid, Button,Alert } from "react-native";
-
-const requestCameraPermission = async () => {
-  try {
-    const granted = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.CAMERA,
-      {
-        title: "Camera Permission!",
-        message:
-          "Need Permission to access camera",
-        buttonNegative: "Cancel",
-        buttonPositive: "OK"
-      });
-    if (granted === PermissionsAndroid.RESULTS.GRANTED) {  } else { }
-     } catch (err) { console.warn(err);}};
-
-export default function App() {
-  const [perm, setPerm] = useState('Check Camera Permission!')
-  const checkPerm = async ()=>{
-    const res = await PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.CAMERA);
-    if(res==true){setPerm("Camera Permission Granted")}
-      else if(res==false){setPerm("Camera Permission Not Guranted")}
-  }
-  return ( 
-    <View style={{padding:20,margin:20}}>
-    <Text style={{fontSize:18,color:'#ffffff',backgroundColor:'#F50057',padding:12,marginBottom:2,textAlign:'center'}}>{perm}</Text>
-    <Button title="REQUEST FOR CAMERA PERMISSION" onPress={requestCameraPermission} style={{borderRadius: 0, padding:10, marginLeft: 0, marginRight: 0, marginBottom: 5,backgroundColor:"#F9A826"}} />
-    <Button title="CAMERA PERMISSION STATUS" onPress= {checkPerm} style={{borderRadius: 0, padding:10, marginLeft: 0, marginRight: 0, marginBottom: 5,backgroundColor:"#F9A826"}} />
-    </View>  
-  );
-}
-```
+In the above code snippet, We import a hook, UseState provided by the React library to manage the state. We have declared a state called name whose initial value is assigned to be null and attached a method called setName that updates its state value every time the input text is changed. The above is a typical coding style to implement a hook in React Native.  
 
 ### Navigation 
 Navigating through screens is a necessary part of any mobile application. It is vital for every mobile application. We all can agree with that, I am sure. However, for mobile applications, React Native does not provide a standard way or approach to solving the problem of navigating through different screens. Therefore, there are various options out there on the web to get the job done. 
@@ -525,14 +499,62 @@ It is a powerful library that provides different types of navigation options lik
 - Bottom Tab Navigator
 - Material Top Tab Navigator and many more. 
 
-In this tutorial, we will briefly discuss <b>React Navigation</b>, a third-party open-source library for routing and navigating in the ReactNative Apps.  It has more than 18k stars on Github, and almost everyone I know in the ReactNative community has heard and used it at some point in their project. We will implement a Simple Stack Navigator, the one that React Native Tutor app also uses. So without wasting any more second, let us get started.
+In here, we will briefly discuss <b>React Navigation</b>, a third-party open-source library for routing and navigating in the ReactNative Apps.  It has more than 18k stars on Github, and almost everyone I know in the ReactNative community has heard and used it at some point in their project. We will implement a Simple Stack Navigator, the one that React Native Tutor app also uses. So without wasting any more second, let us get started.
 
 #### Stack Navigator 
 In StackNavigator, we place a new screen on top of a stack in StackNavigator. ReactNative Tutor uses a StackNavigator as a navigator solution to navigate through different screens. So, we will try to replicate it in this tutorial. 
 
+#### Code 
 ```
-Stack Navigator Code ... 
+import * as React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer } from '@react-navigation/native';
+
+// Screen 1 ( Home )
+function Home({ navigation }) {
+  
+  // Route to About Screen Component
+  const presshandler = {navigation.push('About')} 
+  
+  return(
+    <View>
+      <Text> Home1 </Text>
+      <Button 
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
+            title='Move To About Screen'
+            onPress={presshandler} />
+    </View>  )}
+
+// Screen 2 ( About )    
+function About({ navigation }) {
+  return(
+    <View>
+      <Text> About Screen </Text>
+    </View>  )}
+
+const HomeStack = createStackNavigator();
+
+// Creating a Stack Navigator ..    
+function MyStack(){
+    return(
+      <NavigationContainer>  
+        <HomeStack.Navigator>
+        <HomeStack.Screen name="Home"  component={Home} />
+        <HomeStack.Screen name="About" component={About}  />
+        </HomeStack.Navigator>
+      </NavigationContainer>);}
+
+export default function App() {
+  return ( <MyStack />);}
 ```
+In the above code snippet, we have created a Stack Navigator using the React Navigation library. 
+
+Home is the 1st screen of the app. 
+About is the 2nd screen of the app.
+
+The Home screen contains a simple view with text and button. On button click, one can navigate to the About screen by using the React Navigations navigate.push() method. 
+
+We pass navigation props to all components of the app, keeping track of screens in the entire app.  
 
 ### Top React Native Packages To Boost Developer Productivity 
 Developers all around the world use open-source libraries in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. I am sure about the fact that almost every app on the Google play store and Apple App Store use at least one open-source library. If not, then I feel sorry for the developer. Even I have used two open-source libraries in ReactNative Tutor:
