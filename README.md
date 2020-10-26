@@ -370,7 +370,7 @@ ToastAndroid component of ReactNative exposes the Android platform's ToastAndroi
 Alert Component of React Native provides an Alert box with title and message. It can be merely compared to a dialogue box, as seen on Android or iOS devices. It has an option to provide optional buttons for users to interact.
 
 #### Example
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/im-snap.png?raw=true "Title")
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/butal-snap.png?raw=true "Title")
 
 #### Code
 
