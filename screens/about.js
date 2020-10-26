@@ -19,7 +19,7 @@ export default function About() {
                 <Card.Image resizeMode='cover' source={require('../assets/raw_images/reactlogo.png')} />             
               </Card>
            {data.map((obj)=>
-              <Card>
+              <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>

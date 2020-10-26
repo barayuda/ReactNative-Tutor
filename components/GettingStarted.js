@@ -39,21 +39,21 @@ export default function GS({navigation}) {
                 <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
               </Card>
            {data.map((obj)=>
-              <Card>
+              <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>
                   <Text style={{fontSize:16,textAlign:'justify'}}>{obj.para}</Text>
                   </View>                 
               </Card>
-           )}
+           )} 
            <Card>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>File Structure</Card.Title>
                   <Card.Divider/>
                 <Card.Image style={{height:Dimensions.get('window').height/3.5}} resizeMode="stretch"  source={require('../assets/raw_images/file_structure.png')} />                         
               </Card>
            {data2.map((obj)=>
-              <Card>
+              <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>
@@ -72,7 +72,7 @@ export default function GS({navigation}) {
             
            )}
            {data3.map((obj)=>
-              <Card>
+              <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>
@@ -105,7 +105,7 @@ export default function GS({navigation}) {
             <Card>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>HelloWorld App on iOS and Android</Card.Title>
                   <Card.Divider/>
-                <Card.Image style={{height:Dimensions.get('window').height/3.5}} resizeMode="center"  source={require('../assets/raw_images/exposcan.jpg')} />                         
+                <Card.Image style={{height:Dimensions.get('window').height/3.5}} resizeMode="center"  source={require('../assets/raw_images/exposcan.png')} />                         
                 <Card.Divider />
                 <View>
                   <Text style={{fontSize:16,textAlign:'justify'}}>{sa}</Text>

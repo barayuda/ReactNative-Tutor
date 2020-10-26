@@ -13,7 +13,7 @@ export default function ST({navigation}) {
         {title:"Introduction",para:"Every mobile app needs to store some amount of data on the client-side. Storing data on the user devices not only makes it easy for developers to retrieve the user's info fast when he tries to log in to the app again but can also enhance the user's offline app experience.\n\nIn this tutorial, we will briefly discuss the storage options provided by React Native to store data offline. We will create a small application where we will save the information of the user in the device using Async Storage and retrieve it using ReactNative. \n"},
         {title:"What is Async Storage?",para:"AsyncStorage is an unencrypted, asynchronous, persistent, key-value storage system that is global to the app. It is advisable to use Async storage instead of LocalStorage. It provides lots of methods to store, retrieve, and remove data.\n\nOn iOS, AsyncStorage is backed by native code that stores small values in a serialized dictionary. On Android, AsyncStorage will use either RocksDB or SQLite based on what is available.\n"}
     ]
-    const stor = {explanation:"",embed_code:"<script src='https://gist.github.com/karanjagota/3735a7cebf866a8684a167365d1be416.js'></script>"}
+    const stor = {explanation:"In the above code snippet, we have used a third-party library called AsyncStorage.\n\nTo add a library into the React Native project, write the following command in the terminal- \n\nnpm add @react-native-async-storage/async-storage --save \n\nWe first import the module from the -\n\n@react-native-async-storage/async-storage library\n\nWe use two methods provided by the library to store and get the data into the device. The two functions are as follows:\n\nsetItem()\ngetItem()\n\nThe store method of the Async Storage takes two params key and value, whereas we retrieve information from the storage bypassing the key as the argument.\n ",embed_code:"<script src='https://gist.github.com/karanjagota/3735a7cebf866a8684a167365d1be416.js'></script>"}
     
     
     const storeData = async (value)=>{
@@ -35,7 +35,7 @@ export default function ST({navigation}) {
                 <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
               </Card>
            {data.map((obj)=>
-            <Card>
+            <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>

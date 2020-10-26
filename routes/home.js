@@ -15,7 +15,7 @@ export default function MyStack(){
     return(
       <NavigationContainer>  
         <HomeStack.Navigator>
-        <HomeStack.Screen title="React Native Tutor" name="Home" component={Home} />
+        <HomeStack.Screen title="React Native Tutor" name="Home" component={Home} options={{headerTitle:"React Native Tutor"}}  />
         <HomeStack.Screen name="About" component={About} options={{headerTitle:"About React Native"}} />
         <HomeStack.Screen name="Component" component={Component} options={{headerTitle:"Learn React Native"}}/>
         <HomeStack.Screen name="DComponent" component={DComponent} options={{headerTitle:"Tutorial"}}/>

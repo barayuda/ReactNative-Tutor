@@ -33,7 +33,7 @@ export default function PM({navigation}) {
     const data = [
         {title:"Introduction",para:"In today's world, companies all around the world are trying to steal our private data for making profits. Organizations in the name of personalization are taking our sensitive information. Therefore users must know which application is trying to access their sensitive data such as files, contacts, and SMS, as well as mobile features, likes camera and internet. \n\nPermission modal for users varies from platform to platform. However, in this tutorial, we will look at how to ask for permissions in ReactNative, specific to the Android Platform. \n\nIn Android, SDK level 23 (Marshmallow), and above, there are two types of permissions - one that needs to add in the manifest file, which the user grants at the time of installation of the app, and second that the developers need to ask at the runtime for granting permission. These permissions not only needs to be included in the manifest file but also has to include at the runtime. These permissions that require a dialogue prompt at the run time is called Dangerous Permissions.\n\nSome of them that we will see in this tutorial are as follows:\n\n\n1. CAMERA\n\n2. READ_CONTACTS\n\n3. WRITE_CONTACTS\n\n4. RECORD_AUDIO\n\n5. READ_EXTERNAL_STORAGE\n\n6. WRITE_EXTERNAL_STORAGE, and many more. \n\nLet us look at each of them with the help of an example. "}
     ]
-    const pr = {embed_code:"<script src='https://gist.github.com/karanjagota/c7616a98a61829de24b4f6fef183ceec.js'></script>",explanation:""}
+    const pr = {embed_code:"<script src='https://gist.github.com/karanjagota/c7616a98a61829de24b4f6fef183ceec.js'></script>",explanation:"The above code snippet demonstrates the use of Permissions in the React Native app for the Android platform. The code to access any of the permission will be the same no matter its type. ReactNative provides a core component to handle dangerous permissions for the Android Platform.\n\nIt is in the PermissionsAndroid module of React Native.\n\nThe above code is pretty much self-explanatory, where one button checks the status of the camera permission given by the user using the Android Permissions check() method while the later requests for permission to be able to access specific hardware of the device. \n\nOnce the user grants permission successfully, the app can do pretty much everything with the hardware of the device. \n"}
 
     const checkPerm = async ()=>{
       const res = await PermissionsAndroid.check(PermissionsAndroid.PERMISSIONS.CAMERA);
@@ -48,7 +48,7 @@ export default function PM({navigation}) {
                 <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
               </Card>
            {data.map((obj)=>
-            <Card>
+            <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>

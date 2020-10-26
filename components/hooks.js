@@ -10,8 +10,8 @@ export default function SPH({navigation}) {
     {title:"Intoduction",para: "In this tutorial, we will look at how to customize the components and make them interactive. In general, while developing, we will use these components (built-in and user-defined), props state, and hooks together to create a stunning mobile app.  We will briefly discuss and implement the code for each of the above, one by one.\n"}, 
 ]
 
-    const props={title:"Props",explanation:"In the above code snippet, we have developed a customized core React Native component <Text> to <MyComponent>, where we can add <addtext> as a prop.\n",embed_code:"<script src='https://gist.github.com/karanjagota/e40a1860af8398618e771451f30e6856.js'></script>",para:"Props, short form for Properties are the parameters for components. They are the easiest way to customize it at the time of creation.\n\nFor Instance: In Text(core component), style is a prop provided by React Native.\n\nThe only thing to remember is that we can pass data or functions as props. With props and core components combined, we can create a wide variety of stunning visuals for our app by reutilizing one component with different props as parameters whenever required. Let us look at a simple example:\n"}
-    const st = {title:"State and Hooks",explanation:"",embed_code:"<script src='https://gist.github.com/karanjagota/d42e9bfa596c77f983a3464b600df0af.js'></script>",para: "State\n\nWe use a state for the data that is going to change over time. Consider state as mutable while props immutable in a React Native App. \n\nHooks\n\nHooks in React are functions that allow developers to use React state and a component's lifecycle methods in a functional Component. React provides a few built-in Hooks like useState and use effect. Developers can also create their Hooks to re-use the stateful behavior between different components. It provides an API to ReactNative concepts such as props, state, context, refs, and lifecycle.\n"}
+    const props={title:"Props",explanation:"In the above code snippet, we have customized core ReactNative component MyComponent that takes prop 'addtext' as a parameter. It is a fundamental principle concept provided by React that ensures code reusability. MyComponent is a customized component that can be used anywhere within the app using the import statement.\n",embed_code:"<script src='https://gist.github.com/karanjagota/e40a1860af8398618e771451f30e6856.js'></script>",para:"Props, short form for Properties are the parameters for components. They are the easiest way to customize it at the time of creation.\n\nFor Instance: In Text(core component), style is a prop provided by React Native.\n\nThe only thing to remember is that we can pass data or functions as props. With props and core components combined, we can create a wide variety of stunning visuals for our app by reutilizing one component with different props as parameters whenever required. Let us look at a simple example:\n"}
+    const st = {title:"State and Hooks",explanation:"In the above code snippet, We import a hook, UseState provided by the React library to manage the state. We have declared a state called name whose initial value is assigned to be null and attached a method called setName that updates its state value every time the input text is changed. The above is a typical coding style to implement a hook in React Native.\n",embed_code:"<script src='https://gist.github.com/karanjagota/d42e9bfa596c77f983a3464b600df0af.js'></script>",para: "State\n\nWe use a state for the data that is going to change over time. Consider state as mutable while props immutable in a React Native App. \n\nHooks\n\nHooks in React are functions that allow developers to use React state and a component's lifecycle methods in a functional Component. React provides a few built-in Hooks like useState and use effect. Developers can also create their Hooks to re-use the stateful behavior between different components. It provides an API to ReactNative concepts such as props, state, context, refs, and lifecycle.\n"}
     const presshandler = (link,s)=>{ navigation.push('DApplication',{link:link,setq:s});}
     const [name, setName] = useState('')
     const data2 = [    
@@ -26,7 +26,7 @@ export default function SPH({navigation}) {
                 <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
               </Card>
            {data.map((obj)=>
-            <Card>
+            <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>
@@ -92,7 +92,7 @@ export default function SPH({navigation}) {
                   </View> 
               </Card>
               {data2.map((obj)=>
-            <Card>
+            <Card key={obj.title}>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>{obj.title}</Card.Title>
                   <Card.Divider/>
                   <View>

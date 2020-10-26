@@ -6,7 +6,7 @@ import SPH from '../components/hooks';
 import ST from '../components/Storage';
 import NV from '../components/navigate';
 import PM from '../components/Perm';
-import NW from '../components/network';
+import LB from '../components/libr';
 
 export default function DComponent({ route, navigation }) {
     let a = route.params.id;
@@ -17,7 +17,7 @@ export default function DComponent({ route, navigation }) {
     else if(a==4){return(<View><ST navigation={na} /></View>);}
     else if(a==5){return(<View><PM navigation={na} /></View>);}
     else if(a==6){return(<View><NV navigation={na} /></View>);}
-    else if(a==7){return(<View><NW navigation={na} /></View>);}
+    else if(a==7){return(<View><LB navigation={na} /></View>);}
     
   }
   

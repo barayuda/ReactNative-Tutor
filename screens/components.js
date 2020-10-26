@@ -16,7 +16,7 @@ export default function Component({ navigation }) {
               </Card>
         {
           data.map( (title)=> 
-          <Card>
+          <Card key={title.id}>
          <Button 
             buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
               title={title.title}  id={title.id} onPress={()=>presshandler(title.id)}/>
