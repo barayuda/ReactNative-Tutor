@@ -1,4 +1,7 @@
 # How To Develop Mobile App using React Native
+### How I Developed React Native Tutor (One stop destination to learn React Native)
+
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/rectutor-logo.png?raw=true "Title")
 
 We are living in the 21st-century. A place where people are so obsessed with technology that most of them cannot live without their smartphones. We live in a world of a variety of mobile devices majorly dominated by two platforms - iOS and Android. I am sure we all can agree on that. Building a mobile app is not an easy task though 
 
@@ -206,6 +209,8 @@ Apart from these built-in components, we can create our custom components, or we
 
 Let us look at how to use these components one by one in detail-
 
+### View, StyleSheet and Text
+
 #### View
 We start by declaring a View component, which is the basic building block in a ReactNative file. It maps the fundamental native iOS (UIView) and Android's (View) Components. You can think of this component as a div element from HTML. Hence, the View component can contain nested components. 
 
@@ -216,7 +221,9 @@ We provide styles to the View component via the Stylesheet. Stylesheet in ReactN
 The text component, in many ways, is just like the View component, except that it is specifically available to display text. Also, like a View component, it supports styling.   
 
 #### Example
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
+
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/tv-snap.png?raw=true "Title")
+
 #### Code
 
 ```
@@ -247,7 +254,7 @@ const styles = StyleSheet.create({
   },
 });
 ```
-##### Explanation
+#### Explanation
 
 The above code snippet is a typical pattern style that you will see quite often in React Native. Let us understand the code line by line.  
 
@@ -261,6 +268,8 @@ return ( // View )}
 
 As we know from above that the ReactNative App consists of components. These are the visual blocks that we see on the screen. The above code is a standard way of creating a function-based that can be used anywhere within the app. 
 
+### ScrollView and FlatList
+
 #### ScrollView 
 As the name suggests, it provides a solution to scrolling content across any screen height. It supports both vertical and horizontal scrolling along with an optional option to pinch to zoom feature. 
 
@@ -268,7 +277,9 @@ As the name suggests, it provides a solution to scrolling content across any scr
 It is a component that allows developers to present a list of similarly structured data items in a scrollable way. It is generally preferred over the scroll view when the number of data items in the list changes over time. 
 
 #### Example
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
+
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/sv-snap.png?raw=true "Title")
+
 ### Code
 ```
 import React from 'react';
@@ -299,8 +310,11 @@ const styles = StyleSheet.create({
   },
 });
 ``` 
+#### Explanation
 The above code snippet is pretty much self-explanatory. 
 First, we import the module ScrollView from the react-native library. Next, we create a function-based component where we add Views to the ScrollView Component. In the above code, we add list items to the ScrollView Component with an array with the help of JSX. We pass style as a prop to the text component that takes an object created using the StyleSheet component.  
+
+### Image and Dimensions
 
 #### Image
 It is a component that provides a way to display images on the screen. It supports images from any format. One can get the picture from either the local storage or the network. 
@@ -309,7 +323,7 @@ It is a component that provides a way to display images on the screen. It suppor
 The dimension component of ReactNative allows the developers to get the dimensions of the application's window / mobile screen. It may change according to device rotation and type.
 
 #### Example
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/im-snap.png?raw=true "Title")
 
 #### Code
 
@@ -335,7 +349,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
+#### Explanation
 In the above code snippet, we load an image stored in the assets folder of our project directory. The image component of the React Native takes source as a prop using which we can add our pictures to the screen.  We set the image width and height using the Dimensions component provided by the React Native library that contains methods to capture the dimensions of the application window.
+
+### Button, TextInput, ToastAndroid, and Alert
 
 #### Button
 As the name suggests, the button component is the easiest way to allow the developers to provide a way for their users, handle touch gestures on the mobile screen. 
@@ -353,7 +370,7 @@ ToastAndroid component of ReactNative exposes the Android platform's ToastAndroi
 Alert Component of React Native provides an Alert box with title and message. It can be merely compared to a dialogue box, as seen on Android or iOS devices. It has an option to provide optional buttons for users to interact.
 
 #### Example
---- image 
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/im-snap.png?raw=true "Title")
 
 #### Code
 
@@ -386,6 +403,7 @@ const styles = StyleSheet.create({
   tinput:{ padding:10, marginBottom:5,fontSize:15 }
 });
 ```
+#### Explanation
 The above code snippet is pretty much self-explanatory. The Button component of ReactNative takes style, title, and onPress props.  In the above code, we pass methods as props that display an alert message and toast message (Android) on the button click. We check the information on the platform by using the Platform component of React Native. 
 
 ### Props, State and Hooks 
@@ -400,7 +418,9 @@ For instance: In Text(core component), style is a prop provided by React Native.
 The only thing to remember is that we can pass data or functions as props. With props and core components combined, we can create a wide variety of stunning visuals for our app by reutilizing one component with different props as parameters whenever required. Let us look at a simple example:
 
 #### Example
---img 
+
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/prop-snap.png?raw=true "Title")
+
 #### Code
 
 ```
@@ -434,6 +454,7 @@ const styles = StyleSheet.create({ viewstyle:{ flex:1, margin:10 },
   }
 });
 ```
+#### Explanation
 In the above code snippet, we have customized core ReactNative component MyComponent that takes prop 'addtext' as a parameter. It is a fundamental principle concept provided by React that ensures code reusability. MyComponent is a customized component that can be used anywhere within the app using the import statement.   
 
 #### State
@@ -446,7 +467,9 @@ Hooks in React are functions that allow developers to use React state and a comp
 Props, in general, are immutable and are fixed throughout the lifetime of the component. State, on the other hand, is mutable and can be changed at any time in the future. 
 
 #### Example
---img 
+
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/hok.sanp.png?raw=true "Title")
+
 #### Code
 
 ```
@@ -478,9 +501,10 @@ const styles = StyleSheet.create({
     borderRadius:20},
 });
 ```
+#### Explanation
 In the above code snippet, We import a hook, UseState provided by the React library to manage the state. We have declared a state called name whose initial value is assigned to be null and attached a method called setName that updates its state value every time the input text is changed. The above is a typical coding style to implement a hook in React Native.  
 
-### Navigation 
+### Navigation In React Native
 Navigating through screens is a necessary part of any mobile application. It is vital for every mobile application. We all can agree with that, I am sure. However, for mobile applications, React Native does not provide a standard way or approach to solving the problem of navigating through different screens. Therefore, there are various options out there on the web to get the job done. 
 
 #### Different Navigation Solutions
@@ -503,6 +527,10 @@ In here, we will briefly discuss <b>React Navigation</b>, a third-party open-sou
 
 #### Stack Navigator 
 In StackNavigator, we place a new screen on top of a stack in StackNavigator. ReactNative Tutor uses a StackNavigator as a navigator solution to navigate through different screens. So, we will try to replicate it in this tutorial. 
+
+#### Example
+
+![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/nav-snap.png?raw=true "Title")
 
 #### Code 
 ```
@@ -547,6 +575,8 @@ function MyStack(){
 export default function App() {
   return ( <MyStack />);}
 ```
+
+#### Explanation
 In the above code snippet, we have created a Stack Navigator using the React Navigation library. 
 
 Home is the 1st screen of the app. 
@@ -602,6 +632,12 @@ If you like the above tutorial, then you would love React Native Tutor. A full-f
 
 - Beautiful UI   
 
+#### How to Start the app 
+
+```
+npm install 
+npm start 
+```
 
 
 
