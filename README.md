@@ -1,7 +1,8 @@
 # How To Develop Mobile App using React Native
 ### How I Developed React Native Tutor (One stop destination to learn React Native)
 
-Youtube Video link : <a href="https://youtu.be/5YF7SMDkkWs"> React Native Tutor</a>
+Youtube Video link : <a href="https://youtu.be/5YF7SMDkkWs"> React Native Tutor</a> 
+Web link : <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/rectutor-logo.png?raw=true "Title")
 
