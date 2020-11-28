@@ -11,7 +11,7 @@ export default function GS({navigation}) {
     {title:"Node JS",para:"React Native uses NodeJs, a JavaScript runtime, to build our Javascript code. If you don't have Nodejs installed already, you can get it from its official website. \n\nLink: https://nodejs.org/"},
     {title:"CLI",para:"There are two ways to develop your first mobile app in ReactNative. You can do it with the help of either:\n\n 1. The Expo CLI \n 2. ReactNative CLI. \n"},
     {title:"What is Expo CLI and ReactNative CLI? ",para:"The primary use of both the CLI is to scaffold a starter project containing everything we need to build and run a ReactNative App. We will install one of the CLI with the help of the Node Package Manager. The Package Manager will install this CLI tool as a global module.\n\nThe first way to develop a starter ReactNative App is with the help of Expo CLI. Expo is a set of tools built around React Native. If you are new to mobile development, I would highly recommend you to use it as it can get you started within minutes.\n\nThe second is through ReactNative CLI. It is best to install ReactNative CLI when we want to use native code in our app. It does not require the expo library. However, it makes things a little complex for code Newbies.\n\nFor simplicity, I will use Expo CLI in this tutorial as it is easy and as simple as writing the hello world program.\n"},
-    {title:"Start a React Native Project",para:"Download expo cli using node package manager:\n\nnpm install -g expo-cli\n\nTo create a new app, we will use the expo init command that will set up a new ReactNative app called HelloWorld.\n\n\nexpo init HelloWorld\n\ncd AppName\n"},
+    {title:"Start a React Native Project",para:"Download expo cli using node package manager:\n\nnpm install -g expo-cli\n\nTo create a new app, we will use the expo init command that will set up a new ReactNative app called HelloWorld.\n\n\nexpo init HelloWorld\n\nSelect Blank Template\n\ncd AppName\n"},
     {title:"Small Tiny Steps: One At a Time ",para:"Let's look at the file structure and understand each file and folder one by one.\n"}
       ];
 
@@ -36,7 +36,7 @@ export default function GS({navigation}) {
               <Card>
               <Card.Title style={{color:'#6C63FF'}}>Getting Started</Card.Title>
                   <Card.Divider/>
-                <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/undraw_start_building.png')} />             
               </Card>
            {data.map((obj)=>
               <Card key={obj.title}>
@@ -92,7 +92,7 @@ export default function GS({navigation}) {
             <Card>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>Metro Bundler</Card.Title>
                   <Card.Divider/>
-                <Card.Image style={{height:Dimensions.get('window').height/3.5}} resizeMode="stretch"  source={require('../assets/raw_images/metrobundler.png')} />                         
+                <Card.Image resizeMode="stretch"  source={require('../assets/raw_images/metrobundler.png')} />                         
               </Card>
                  
             <Card>
@@ -105,7 +105,7 @@ export default function GS({navigation}) {
             <Card>
                   <Card.Title style={{textAlign:'left',color:'#6C63FF'}}>HelloWorld App on iOS and Android</Card.Title>
                   <Card.Divider/>
-                <Card.Image style={{height:Dimensions.get('window').height/3.5}} resizeMode="center"  source={require('../assets/raw_images/exposcan.png')} />                         
+                <Card.Image resizeMode="stretch"  source={require('../assets/raw_images/exposcan.png')} />                         
                 <Card.Divider />
                 <View>
                   <Text style={{fontSize:16,textAlign:'justify'}}>{sa}</Text>

@@ -15,7 +15,7 @@ export default function DP() {
        <Card>
               <Card.Title style={{color:'#6C63FF'}}>Deploying React Native App</Card.Title>
                   <Card.Divider/>
-                <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/undraw_start_building.png')} />             
               </Card>
            {data.map((obj)=>
             <Card key={obj.title}>

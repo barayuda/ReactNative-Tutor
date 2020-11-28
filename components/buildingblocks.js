@@ -22,7 +22,7 @@ export default function BB({navigation}) {
             <Card>
               <Card.Title style={{color:'#6C63FF'}}>Building Blocks</Card.Title>
                   <Card.Divider/>
-                <Card.Image resizeMode='cover' source={require('../assets/raw_images/start.png')} />             
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/undraw_start_building.png')} />             
               </Card>
            {data.map((obj)=>
             <Card key={obj.title}>
@@ -95,7 +95,7 @@ export default function BB({navigation}) {
                   </View>              
                   <Card.Title style={{textAlign:'left'}}>Example</Card.Title>
                   <Card.Divider/>   
-                  <Card.Image resizeMode='cover' source={require('../assets/raw_images/reactlogo.png')} /> 
+                  <Card.Image resizeMode='cover' source={require('../assets/raw_images/undraw_react.png')} /> 
                   <Card.Title style={{textAlign:'left',marginTop:10}}>Code</Card.Title>
                   <Card.Divider/> 
                   <WebView startInLoadingState={true} originWhitelist={['*']} source={{ html: im.embed_code}} style={{flex:1,height:Dimensions.get('window').height/2.5,width:Dimensions.get('window').width}}/> 

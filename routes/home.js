@@ -8,6 +8,7 @@ import DComponent from '../screens/detail_components';
 import Application from '../screens/application';
 import DApplication from '../screens/detail_application';
 import Connect from '../screens/connect';
+import CodeSnippet from '../screens/snippets';
 
 const HomeStack = createStackNavigator();
 
@@ -22,6 +23,7 @@ export default function MyStack(){
         <HomeStack.Screen name="Application" component={Application} options={{headerTitle:"React Jobs"}}/>
         <HomeStack.Screen name="DApplication" component={DApplication} options={{headerTitle:"React Native Tutor"}} />
         <HomeStack.Screen name="Connect" component={Connect} options={{headerTitle:"Deploy App"}} />
+        <HomeStack.Screen name="Snippet" component={CodeSnippet} options={{headerTitle:"Code Snippets"}} />
         </HomeStack.Navigator>
       </NavigationContainer>
     );

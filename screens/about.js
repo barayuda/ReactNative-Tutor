@@ -16,7 +16,7 @@ export default function About() {
     return (
       <ScrollView>
               <Card>
-                <Card.Image resizeMode='cover' source={require('../assets/raw_images/reactlogo.png')} />             
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/undraw_react.png')} />             
               </Card>
            {data.map((obj)=>
               <Card key={obj.title}>

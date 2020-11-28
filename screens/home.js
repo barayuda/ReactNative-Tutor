@@ -6,10 +6,12 @@ import { Card, Button,Icon } from 'react-native-elements'
 export default function Home({ navigation }) {
    
   const data = [
-    {title: "About ReactNative",source:require("../assets/raw_images/reactlogo.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
-    {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/ab.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
-    {title: "Find React Jobs",source:require("../assets/raw_images/jobs.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
-    {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:4}
+    {title: "About ReactNative",source:require("../assets/raw_images/undraw_react.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
+    {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/undraw_ideas_flow.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
+    {title: "Find React Jobs",source:require("../assets/raw_images/undraw_hire.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
+    {title:"Code Snippets",source:require("../assets/raw_images/undraw_source_code.png"),info:"Powered by Wit.ai, find code snippets for your next ReactNative project.",id:4},
+    {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:5}
+  
   ]
   
     const presshandler = (id)=>{
@@ -21,6 +23,8 @@ export default function Home({ navigation }) {
             }else if(id==3){
               navigation.push('Application')
             }else if(id==4){
+              navigation.push('Snippet')
+            }else if(id==5){
               navigation.push('Connect')
             }
     }
@@ -45,6 +49,7 @@ export default function Home({ navigation }) {
           <CARD_COMPONENT title={data[1].title} source={data[1].source} info={data[1].info} id={data[1].id} />
           <CARD_COMPONENT title={data[2].title} source={data[2].source} info={data[2].info} id={data[2].id} />
           <CARD_COMPONENT title={data[3].title} source={data[3].source} info={data[3].info} id={data[3].id} />
+          <CARD_COMPONENT title={data[4].title} source={data[4].source} info={data[4].info} id={data[4].id} />
         </ScrollView>
     );
   }
