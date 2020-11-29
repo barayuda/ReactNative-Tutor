@@ -380,6 +380,7 @@ The above code snippet is pretty much self-explanatory.
 First, we import the module ScrollView from the react-native library. Next, we create a function-based component where we add Views to the ScrollView Component. In the above code, we add list items to the ScrollView Component with an array with the help of JSX. We pass style as a prop to the text component that takes an object created using the StyleSheet component.  
 
 ### Image and Dimensions
+<i>Replace the assets folder with the one found in the Link:<a href="https://github.com/karanjagota/ReactNative-Tutor/tree/main/assets">Download Assets</a></i>
 
 #### Image
 It is a component that provides a way to display images on the screen. It supports images from any format. One can get the picture from either the local storage or the network. 
@@ -400,7 +401,7 @@ export default function App() {
   return (
     <View>
       <Image 
-        source={require('..assets/images/my_image.png')}
+        source={require('..assets/raw_images/undraw_react.png')}
         style = {styles.im}
       />            
    </View>
@@ -681,7 +682,7 @@ export default function Component() {
         <Card>
               <Card.Title >Step By Step Tutorials</Card.Title>
                   <Card.Divider/>
-                <Card.Image resizeMode='cover' source={require('../assets/raw_images/tu.png')} />             
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/undraw_teacher.png')} />             
               </Card>
         {
           data.map( (title)=> 
@@ -802,14 +803,13 @@ import { Text, ScrollView } from 'react-native';
 import { Card, Button } from 'react-native-elements';
 
 export default function Home({ navigation }) {
-   
-    const data = [
-        {title: "About ReactNative",source:require("../assets/raw_images/reactlogo.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
-        {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/ab.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
-        {title: "Find React Jobs",source:require("../assets/raw_images/jobs.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
-        {title:"Code Snippets",source:require("../assets/raw_images/undraw_source_code.png"),info:"Powered by Wit.ai, find code snippets for your next ReactNative project.",id:4},
-        {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:5}
-      ]
+  const data = [
+    {title: "About ReactNative",source:require("../assets/raw_images/undraw_react.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
+    {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/undraw_ideas_flow.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
+    {title: "Find React Jobs",source:require("../assets/raw_images/undraw_hire.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
+    {title:"Code Snippets",source:require("../assets/raw_images/undraw_source_code.png"),info:"Powered by Wit.ai, find code snippets for your next ReactNative project.",id:4},
+    {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:5}
+  ]
   
     const presshandler = (id)=>{
             navigation.push('Component');
