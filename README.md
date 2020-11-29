@@ -582,7 +582,7 @@ Link: https://github.com/react-native-elements/react-native-elements
 React Native WebView is a modern, well-supported, and cross-platform WebView for React Native. It is a replacement for the built-in WebView that React Native provides. 
 Link: https://github.com/react-native-webview/react-native-webview
 
-***Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages. ***
+<b><i>Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages.</i></b>
 
 We can add both the libraries into our project using npm by typing the following commands in the terminal. 
 
@@ -879,7 +879,7 @@ If you like the above tutorial, then you would love React Native Tutor. A full-f
 
 ### How to Start the app 
 
-ReactNative Tutor uses Wit.ai for fetching Code Snippets. Therefore, it requires a web token that one needs to generate from the Wit.ai official website. I have added a tutorial on creating the NLP based Wit.ai API Endpoint on the ReactNativeTutor Web App. Once you have made the API, follow the steps below to start the app- 
+ReactNative Tutor uses Wit.ai for fetching Code Snippets. Therefore, it requires a web token that one needs to generate from the Wit.ai official website. I have added a tutorial on creating the NLP based Wit.ai API Endpoint on the <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App.</a> Once you have made the API, follow the steps below to start the app- 
 
 * Download or Fork the Repository.
 
