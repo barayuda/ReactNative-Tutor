@@ -74,6 +74,7 @@ To follow this tutorial, please make sure you are familiarized with JavaScript/E
 - NodeJs version >= 12.x.x installed
 - Have access to one package manager such as npm or yarn
 - Expo-cli version installed or use npm
+
 However, steps to set up the dev environment exist below.
 
 ## Setting Up the Development Environment
