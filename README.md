@@ -582,7 +582,7 @@ Link: https://github.com/react-native-elements/react-native-elements
 React Native WebView is a modern, well-supported, and cross-platform WebView for React Native. It is a replacement for the built-in WebView that React Native provides. 
 Link: https://github.com/react-native-webview/react-native-webview
 
-<b><i>Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages.</i></b>
+<i>Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages.</i>
 
 We can add both the libraries into our project using npm by typing the following commands in the terminal. 
 
