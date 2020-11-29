@@ -1,25 +1,47 @@
 # How To Develop Mobile App using React Native
 ### How I Developed React Native Tutor (One stop destination to learn React Native)
 
-Youtube Video link : <a href="https://youtu.be/5YF7SMDkkWs"> React Native Tutor</a> 
+Youtube Video link : <a href="https://youtu.be/5EuYVzsHaWc"> React Native Tutor</a> 
 Web link : <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/rectutor-logo.png?raw=true "Title")
 
+## Recommended Way to View React Native Tutor
+<i>If you have a Non-Tech Background or are unfamiliar with Node.js, interested in learning and knowing more about developing mobile apps using ReactNative, then I would highly suggest you first check out ReactNative Tutor Web App by clicking on the link below.   
+
+If you are familiar with Node.js and want to contribute to this repository, or is interested in developing the first two screens of the ReactNative Tutor mobile app in a step by step manner, then please go on reading. </i>
+
+## Table of Contents
+* [Introduction](https://github.com/karanjagota/ReactNative-Tutor#introduction)
+* [Aim of the Tutorial](https://github.com/karanjagota/ReactNative-Tutor#aim-of-the-tutorial)
+* [About React Native](https://github.com/karanjagota/ReactNative-Tutor#about-react-native)
+* [Why should you choose ReactNative for your next Mobile Project?](https://github.com/karanjagota/ReactNative-Tutor#why-should-you-choose-reactnative-for-your-next-mobile-project?)
+* [Developing ReactNative Tutor](https://github.com/karanjagota/ReactNative-Tutor#developing-reactnative-tutor)
+  - [Pre-requisites](https://github.com/karanjagota/ReactNative-Tutor#pre-requisites)
+  - [Setting Up the Development Environment](https://github.com/karanjagota/ReactNative-Tutor#setting-up-the-development-environment)
+  - [Start ReactNative Tutor Project](https://github.com/karanjagota/ReactNative-Tutor#start-reactnative-tutor-project)
+  - [Building Blocks Of ReactNative](https://github.com/karanjagota/ReactNative-Tutor#building-blocks-of-reactnative)
+    * [View, StyleSheet and Text](https://github.com/karanjagota/ReactNative-Tutor#view-stylesheet-and-text)
+    * [ScrollView and FlatList](https://github.com/karanjagota/ReactNative-Tutor#scrollview-and-flatlist)
+    * [Image and Dimensions](https://github.com/karanjagota/ReactNative-Tutor#image-and-dimensions)
+    * [Button, TextInput, ToastAndroid, and Alert](https://github.com/karanjagota/ReactNative-Tutor#button-textinput-toastandroid-and-alert)
+    * [Props, State and Hooks](https://github.com/karanjagota/ReactNative-Tutor#props-state-and-hooks)
+  - [Building the UI of ReactNative Tutor](https://github.com/karanjagota/ReactNative-Tutor#building-the-ui-of-reactnative-tutor)
+  
+
+## Introduction
 We are living in the 21st-century. A place where people are so obsessed with technology that most of them cannot live without their smartphones. We live in a world of a variety of mobile devices majorly dominated by two platforms - iOS and Android. I am sure we all can agree on that. Building a mobile app is not an easy task though 
 
 For iOS, we have to write code in Objective-C and Swift, while for Android, We have to code in java and Kotlin. Apart from using these different programming languages, the dev tools required to develop applications that can run on any of these platforms differs too. It's like two entirely different tech stack used by people to create applications for eighter of the mobile platforms. 
 
 Modern-day developers, on the other hand, use a specific set of technology (HTML, CSS, and JavaScript) that is not only used to build web apps but also native mobile apps. These frameworks fall under an entirely separate category, also known as Cross-Platform Hybrid Frameworks. These are the sets of classes and libraries used by developers to create dynamic apps for different mobile devices. One such framework that we will be going to discuss in this tutorial is <b>ReactNative</b>. It is a cross-platform development framework that allows developers to create native apps for Android and iOS. 
 
-## Aim of the tutorial
+## Aim of the Tutorial
 The tutorial aims to help JavaScript developers to build mobile apps (iOS and Android) using React Native. This tutorial is also for people who are aspiring developers and want to learn and develop mobile applications in less than a week. We will briefly discuss the following things in this tutorial:
-- What is React Native? What are its pros and cons? 
+- What is React Native? What are its pros and cons?
 - Step by step tutorial to develop a React Native mobile app
 - How to boost productivity as a ReactNative Developer?
-- A closer look into ReactNative Tutor.  
-
-So without wasting any more second, let us get started.  
+- A closer look into ReactNative Tutor 
 
 ## About React Native
 ReactNative is a cross-platform development framework allowing you to create native apps for Android and iOS. Unlike some other frameworks likes PhoneGap and Cordova, It does not have any web views. Instead, React Native uses native components that are provided by platforms like iOS and Android, giving developers a full-fledged native development experience while ensuring the safety of the users' experience. 
@@ -34,54 +56,76 @@ ReactNative is a cross-platform development framework allowing you to create nat
 
 - React Native follows the "Learn Once, Write Everywhere" philosophy. It allows developers to use the components that best follow the native concept of each platform. ReactJs is used to develop web apps, whereas ReactNative can be used to build mobile apps. 
 
-## Developing our very first React Native App
+## Developing React Native Tutor
 
-In a simple language, ReactNative allows us to build mobile applications that look, feel, and perform much more like native apps. It uses the same fundamental UI building blocks as used by regular iOS and Android apps. We just put those building blocks together using JavaScript and React. The best thing is that we use similar concepts that we use while developing web applications.  
+In a simple language, ReactNative allows us to build mobile applications that look, feel, and perform much more like native apps. It uses the same fundamental UI building blocks as used by regular iOS and Android apps. We just put those building blocks together using JavaScript and React. The best thing is that we use similar concepts that we use while developing web applications.
 
-We write the "hello world" program whenever we learn any new programming language. Similarly, the first app that you will develop while learning React Native is the "Hello World" App.
+The below tutorial has four parts, where, by the end of each, you will learn a new React Native concept. They are as follows-
+* [Setting up the Development Environment and Starting the new ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#setting-up-the-development-environment)
+* [Building Blocks of ReactNative](https://github.com/karanjagota/ReactNative-Tutor#building-blocks-of-reactnative)
+* [Implementing Third-party Libraries in ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#aim-of-the-tutorial)
+* [Navigation in ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#aim-of-the-tutorial)      
 
-### Pre-requisites: Setting Up the Development Environment
-To dive deeply into the React Natives ecosystem, we need to install a few things first to get started. Let us go through each of them one by one. 
+By the end of the tutorial, we would have build something like this- 
+<End Product add image>
 
-### Node JS 
-ReactNative uses NodeJs, a JavaScript runtime, to build our Javascript code. If you don't have Nodejs installed already, you can get it from its official website. 
-Link: <a href="https://nodejs.org/">https://nodejs.org/</a>
+## Pre-requisites: 
+To follow this tutorial, please make sure you are familiarized with JavaScript/ES6 and meet the following requirements in your local dev environment.
+- NodeJs version >= 12.x.x installed
+- Have access to one package manager such as npm or yarn
+- Expo-cli version installed or use npm
+However, steps to set up the dev environment exist below.
+
+## Setting Up the Development Environment
+To dive deeply into the React Natives ecosystem, we need to install a few things first to get started. Let us go through each of them one by one.
+
+### Node JS
+ReactNative uses NodeJs, a JavaScript runtime, to build our Javascript code. If you don't have Nodejs installed already, you can get it from its official website. Link: <a href="https://nodejs.org/">https://nodejs.org/</a>
+
+### Node Package Manager
+npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, with which developers can download all npm software packages that contain in the npm software registry. When we download Node.js, we automatically get npm installed on our computer.
 
 ### CLI
-There are two ways to develop our first mobile app in ReactNative. We can do it with the help of either the <b>Expo CLI</b> or <b>ReactNative CLI.</b> 
+There are two ways to develop our mobile app in ReactNative. We can do it with the help of either the <b>Expo CLI</b> or <b>ReactNative CLI</b>.
+### What is Expo CLI and ReactNative CLI?
+The primary use of both the CLI is to scaffold a starter project containing everything we need to build and run a ReactNative App. We will install one of the CLI with the help of the Node Package Manager. The Package Manager will install this CLI tool as a global module.
 
-### What is Expo CLI and ReactNative CLI? 
-The primary use of both the CLI is to scaffold a starter project containing everything we need to build and run a ReactNative App. We will install one of the CLI with the help of the Node Package Manager. The Package Manager will install this CLI tool as a global module. 
+- The first way to develop a starter ReactNative App is with the help of Expo CLI. Expo is a set of tools built around React Native. If you are new to mobile development, I would highly recommend you to use it as it can get you started within minutes.
 
-- The first way to develop a starter ReactNative App is with the help of Expo CLI. Expo is a set of tools built around React Native. If you are new to mobile development, I would highly recommend you to use it as it can get you started within minutes. 
+- The second is through ReactNative CLI. It is best to install ReactNative CLI when we want to use native code in our app. It does not require the expo library. However, it makes things a little complex for code Newbies.
 
-- The second is through ReactNative CLI. It is best to install ReactNative CLI when we want to use native code in our app. It does not require the expo library. However, it makes things a little complex for code Newbies. 
-
-For simplicity, I will use Expo CLI here, as it is easy and as simple as writing the hello world program.
-
-One can download expo-cli using npm
-
-```npm install -g expo-cli```
-
-### Start a React Native Project 
-To create a new app, we will use the expo init command that will set up a new ReactNative app called HelloWorld.
+For simplicity, I will use Expo CLI here, as it is easy and as simple as writing the hello world program. One can download expo-cli using npm.
 
 ``` 
-expo init HelloWorld
-
-cd AppName
-
+npm install -g expo-cli
 ```
 
-### Small Tiny Steps: One At a Time 
-Let's look at the file structure and understand each file and folder one by one. 
+## Start ReactNative Tutor Project
+To create a new app, we will use the expo init command that will set up a new ReactNative app called ReactNativeTutor.
+Create a directory where you would want to create your project, go into the directory, open the terminal, and type the below commands-  
+
+```
+expo init ReactNativeTutor  
+```
+
+Select the blank template, as clean as an empty canvas template as shown in the image below-
+<Add Image For Template>
+  
+```
+cd ReactNativeTutor   
+```
+Open the folder in VS code editor.
+
+### Small Tiny Steps: One At a Time
+
+Let's look at the file structure and understand each file and folder one by one.
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/file_structure.png?raw=true "Title")
 
 #### App.js 
 The first file in any react native app that is the entry point of the app development process. Whatever you write inside this file, it will get displayed on mobile devices.
 
-```
+```javascript
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -105,10 +149,10 @@ const styles = StyleSheet.create({
 });
 ```
 
-#### package.json 
-It is where every dependency installed gets listed. 
+#### package.json
+It is where every dependency installed gets listed.
 
-```
+```json
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -152,43 +196,46 @@ web-build/
 .DS_Store
 ```
 
-#### node_modules/ 
+#### node_modules/
 It is a folder that contains all the dependencies/ packages used to develop and run our mobile application.
 
-#### ios/ 
-It is for containing an Xcode project and the code required to bootstrap the app for ios devices. Since we are using expo-cli, the folder may not be seen explicitly in our starter project.
+#### ios/
+It is for containing an Xcode project and the code required to bootstrap the app for ios devices. Since we are using expo-cli, we will not see the folder in our starter project.
 
-#### android/ 
-It is for containing the Android-related code to bootstrap the app for android devices. Since we are using expo-cli, the folder may not be seen explicitly in our starter project.
+#### android/
+It is for containing the Android-related code to bootstrap the app for android devices. Since we are using expo-cli, we will not see the folder in our starter project.
 
-#### App Registry 
+#### App Registry
+AppRegistory is the Js entry point to run a React Native Application. App Component or any other root component in the app should register by using App Registry.registerComponent such that the native system can load the bundle of the app and run the app by starting the AppRegistory.runApplication() method.
 
-AppRegistory is the Js entry point to run a React Native Application. App Component or any other root component in the app should register by using App Registry.registerComponent such that the native system can load the bundle of the app and run the app by starting the AppRegistory.runApplication method. 
 
 ### Run The App
-Run the below command in the terminal-
+Open the terminal in VS code editor and run the below command in it -
 
 ```
-npm start
+npm start 
 ```
 
-The command will start the development server at-
-link: exp://127.0.0.1:19000
-
+The command will start the development server at- link: exp://127.0.0.1:19000
 Clicking on the link, Metro Bundler will open in the browser.
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/metrobundler.png?raw=true "Title")
 
-### Install Expo and Test App
-We will also need to install the Expo app on the ios and Android phone to test our mobile app. After installing from App Store and Google Play Store, connect it with the same wireless network.
+#### Install Expo and Test App
 
-Open the app and scan the QR code that appears in the Metro Bundler to test the app.
+We will also need to install the Expo app on the ios and Android phone to test our mobile app. After installing from the App Store and Google Play Store by clicking on the link below
+Google PlayStore: <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US&gl=US">Download Expo Client</a>  
+Apple AppStore:  <a href="https://apps.apple.com/us/app/expo-client/id982107779"> Download Expo Client</a>
+
+connect it with the same wireless network. Open the app and scan the QR code that appears in the Metro Bundler to test the app.
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
 
-Change the text in the app.js file to HelloWorld to get the desired result. 
+Change the text in the app.js file to HelloWorld to get the desired result.
 
-### Building Blocks Of ReactNative
+Press ctrl+c in the terminal to stop the server. 
+
+## Building Blocks Of ReactNative
 
 <b>Components</b> are the visual elements that you see on the screen in a ReactNative App. There are several components made available for you to use by the ReactNative core. That's what makes ReactNative great! To understand it better, we can categorize these components into different categories:
 
@@ -208,9 +255,11 @@ Android: ToastAndroid, PermissionsAndroid, DatePickerAndroid, etc.
 - Miscellaneous Components : 
 There are tons of other components that ReactNative provide for us to make developers job easy. Some of these include Alert, Animated, CameraRoll, Dimensions, Keyboard, WebView, etc. 
 
-Apart from these built-in components, we can create our custom components, or we can incorporate custom components created by someone else into our projects. For instance, In this app, I am using <b>Card</b> Component provided by the <b>react-native-elements</b> library created by a community of ReactNative developers. 
+Apart from these built-in components, we can create our custom components, or we can incorporate custom components created by someone else into our projects. For instance,Here, we will use <b>Card</b> Component provided by the <b>react-native-elements</b> library created by a community of ReactNative developers. 
 
 Let us look at how to use these components one by one in detail-
+
+<i>Simply make the respective changes in the app.js file to learn the building blocks of React Native and get the desired result.</i> 
 
 ### View, StyleSheet and Text
 
@@ -229,7 +278,7 @@ The text component, in many ways, is just like the View component, except that i
 
 #### Code
 
-```
+```javascript
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -258,16 +307,19 @@ const styles = StyleSheet.create({
 });
 ```
 #### Explanation
-
 The above code snippet is a typical pattern style that you will see quite often in React Native. Let us understand the code line by line.  
 
+```
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+```
 
 The first line import the modules required to run the app using React Library. The second line imports the specific module from the React Native core Library. In the above code, we are importing Stylesheet, Text, and View Component. 
 
+```
 export default function func_name(){
 return ( // View )}
+```
 
 As we know from above that the ReactNative App consists of components. These are the visual blocks that we see on the screen. The above code is a standard way of creating a function-based that can be used anywhere within the app. 
 
@@ -284,7 +336,7 @@ It is a component that allows developers to present a list of similarly structur
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/sv-snap.png?raw=true "Title")
 
 ### Code
-```
+```javascript
 import React from 'react';
 import { StyleSheet, Text, View,ScrollView } from 'react-native';
 
@@ -330,7 +382,7 @@ The dimension component of ReactNative allows the developers to get the dimensio
 
 #### Code
 
-```
+```javascript
 import React from 'react';
 import { StyleSheet,View, Image, Dimensions } from 'react-native';
 
@@ -377,7 +429,7 @@ Alert Component of React Native provides an Alert box with title and message. It
 
 #### Code
 
-```
+```javascript
 import React from 'react';
 import { StyleSheet,View,Button, Alert, Platform, ToastAndroid, TextInput } from 'react-native';
 
@@ -426,7 +478,7 @@ The only thing to remember is that we can pass data or functions as props. With 
 
 #### Code
 
-```
+```javascript
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -439,9 +491,7 @@ function Mycomponent(props){
 }
 
 export default function App() {
-  
   return ( 
-
    <View style={styles.cv}>
      <Mycomponent addtext="From 1st Prop" />
      <Mycomponent addtext="From 2nd Prop" />
@@ -452,9 +502,7 @@ export default function App() {
 
 const styles = StyleSheet.create({ viewstyle:{ flex:1, margin:10 },
   textstyle: {fontSize:18,backgroundColor: '#f50057',marginBottom: 10,color:'#ffffff',padding:10,textAlign: 'center',borderRadius:20},
-  cv:{
-    marginBottom:15
-  }
+  cv:{ marginBottom:15 }
 });
 ```
 #### Explanation
@@ -475,7 +523,7 @@ Props, in general, are immutable and are fixed throughout the lifetime of the co
 
 #### Code
 
-```
+```javascript
 import React, { useState } from 'react';
 import { StyleSheet, TextInput,Text, View } from 'react-native';
 
@@ -506,6 +554,162 @@ const styles = StyleSheet.create({
 ```
 #### Explanation
 In the above code snippet, We import a hook, UseState provided by the React library to manage the state. We have declared a state called name whose initial value is assigned to be null and attached a method called setName that updates its state value every time the input text is changed. The above is a typical coding style to implement a hook in React Native.  
+
+
+## Building the UI of ReactNative Tutor
+
+Up till now, we have briefly discussed the concepts and code paradigms required to create ReactNativeTutor. In this part, we will build the real and same UI as that of the app shown above by developing the first two screens of the app.  
+
+We need to install a few packages before moving forward. They are as follows - 
+- React Native Elements 
+- React Native WebView
+
+### About React Native Elements
+It is a cross-platform UI toolkit for React Native. It has more than 19.6k stars on GitHub and provides a useful set of reusable components for React Native applications.
+Link: https://github.com/react-native-elements/react-native-elements
+
+### About React Native WebView
+React Native WebView is a modern, well-supported, and cross-platform WebView for React Native. It is a replacement for the built-in WebView that React Native provides. 
+Link: https://github.com/react-native-webview/react-native-webview
+
+<i>Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages. </i>
+
+We can add both the libraries into our project using npm by typing the following commands in the terminal. 
+
+```
+npm add react-native-elements
+npm add react-native-webview
+```
+
+You are also required to download the raw_images folder from this repository and add it in the assets directory.
+
+Link To Download: <a href="https://github.com/karanjagota/ReactNative-Tutor/tree/main/assets/raw_images">Download raw_images</a>
+
+Follow the next steps to set up the initial file structure of our app. 
+
+* Create two new folders(screens and components) in the root directory of the project. 
+
+* Add a new JavaScript file (home.js) in the screen directory.
+
+* The home.js is the starting screen of the app. Screens is nothing but component. Let's look at the screen structure in detail.  
+ image add.. 
+* Kindly copy the code below and add it to home.js.
+
+```javascript
+import * as React from 'react';
+import { Text, ScrollView } from 'react-native';
+import { Card, Button } from 'react-native-elements';
+
+export default function Home() {
+  const data = [
+    {title: "About ReactNative",source:require("../assets/raw_images/undraw_react.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
+    {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/undraw_ideas_flow.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
+    {title: "Find React Jobs",source:require("../assets/raw_images/undraw_hire.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
+    {title:"Code Snippets",source:require("../assets/raw_images/undraw_source_code.png"),info:"Powered by Wit.ai, find code snippets for your next ReactNative project.",id:4},
+    {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:5}
+  
+  ]
+
+    const CARD_COMPONENT = (props)=> {
+      return(
+        <Card>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Divider/>
+        <Card.Image source={props.source} />
+        <Text style={{marginBottom: 8}}>
+            {props.info}
+        </Text>
+              <Button 
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
+              title='Learn More' id ={props.id} />      
+        </Card>);
+  }  
+    return (
+        <ScrollView>
+        <CARD_COMPONENT title={data[0].title} source={data[0].source} info={data[0].info} id={data[0].id} />
+        <CARD_COMPONENT title={data[1].title} source={data[1].source} info={data[1].info} id={data[1].id} />
+        <CARD_COMPONENT title={data[2].title} source={data[2].source} info={data[2].info} id={data[2].id} />
+        <CARD_COMPONENT title={data[3].title} source={data[3].source} info={data[3].info} id={data[3].id} />
+        <CARD_COMPONENT title={data[4].title} source={data[4].source} info={data[4].info} id={data[4].id} />
+      </ScrollView>
+    );
+  }
+
+```
+
+* Replace the code of App.js with the code found below- 
+
+```javascript
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import Home from './screens/home';
+
+export default function App() {
+  return (
+    <View>
+      <Home />
+    </View>
+  );
+}
+```
+
+* Run the app. The output should appear similar to the gif below. 
+<gif>
+
+Similarly,We will create the second screen of our app. 
+
+* To create the second screen of our app, let us create another file (component.js) in the screens folder.
+* Add the code shown below in component.js 
+
+```javascript
+import * as React from 'react';
+import { StyleSheet, View, Text, ScrollView, Image } from 'react-native';
+import { Card, Button,Icon } from 'react-native-elements'
+
+export default function Component() {
+    const data = [{title:"Getting Started",id:1}, {title:"Core Components",id:2}, {title:"State Hooks and Props",id:3},{title:"Storage In React Native",id:4},{title:"Permissions In React Native",id:5},{title:"React Native Navigation",id:6},{title:"Animations In React Native",id:7},{title:"ES6 Essentials",id:8},{title:"Open Source Libraries",id:9}];
+    return (
+        <ScrollView>
+        <Card>
+              <Card.Title >Step By Step Tutorials</Card.Title>
+                  <Card.Divider/>
+                <Card.Image resizeMode='cover' source={require('../assets/raw_images/tu.png')} />             
+              </Card>
+        {
+          data.map( (title)=> 
+          <Card key={title.id}>
+              <Button 
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
+              title={title.title}  id={title.id} />
+          </Card>
+          )
+        }
+        
+        </ScrollView>
+    );
+  }
+```
+
+* Change the app.js code with the one found below. 
+
+```javascript
+import React from 'react';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import Home from './screens/home';
+import Component from './screens/component';
+export default function App() {
+  return (
+    <ScrollView>
+      <Home />
+      <Component />
+    </ScrollView>
+  );
+}
+```
+
+* After making the changes, Press ctrl+save. We will get an output similar to the one shown below.
+<gif>
+
 
 ### Navigation In React Native
 Navigating through screens is a necessary part of any mobile application. It is vital for every mobile application. We all can agree with that, I am sure. However, for mobile applications, React Native does not provide a standard way or approach to solving the problem of navigating through different screens. Therefore, there are various options out there on the web to get the job done. 
