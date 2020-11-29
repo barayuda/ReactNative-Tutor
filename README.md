@@ -7,9 +7,11 @@ Web link : <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Nativ
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/rectutor-logo.png?raw=true "Title")
 
 ## Recommended Way to View React Native Tutor
-<i>If you have a Non-Tech Background or are unfamiliar with Node.js, interested in learning and knowing more about developing mobile apps using ReactNative, then I would highly suggest you first check out ReactNative Tutor Web App by clicking on the link below.   
 
-If you are familiar with Node.js and want to contribute to this repository, or is interested in developing the first two screens of the ReactNative Tutor mobile app in a step by step manner, then please go on reading. </i>
+<i>If you have a Non-Tech Background or are unfamiliar with Node.js, interested in learning and knowing more about developing mobile apps using ReactNative, then I would highly suggest you first check out ReactNative Tutor Web App by clicking on the link below.   
+Web link : <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
+  
+If you are familiar with Node.js and want to contribute to this repository, or is interested in developing the first two screens of the ReactNative Tutor mobile app in a step by step manner, then please go on reading.</i>
 
 ## Table of Contents
 * [Introduction](https://github.com/karanjagota/ReactNative-Tutor#introduction)
@@ -27,6 +29,10 @@ If you are familiar with Node.js and want to contribute to this repository, or i
     * [Button, TextInput, ToastAndroid, and Alert](https://github.com/karanjagota/ReactNative-Tutor#button-textinput-toastandroid-and-alert)
     * [Props, State and Hooks](https://github.com/karanjagota/ReactNative-Tutor#props-state-and-hooks)
   - [Building the UI of ReactNative Tutor](https://github.com/karanjagota/ReactNative-Tutor#building-the-ui-of-reactnative-tutor)
+  - [Navigation In React Native](https://github.com/karanjagota/ReactNative-Tutor#navigation-in-react-native)
+* [Congrats and Next Steps](https://github.com/karanjagota/ReactNative-Tutor#congrats-and-next-steps)
+* [A closer look into ReactNative Tutor](https://github.com/karanjagota/ReactNative-Tutor#a-closer-look-into-reactnative-tutor)
+* [Inspiration and Credits](https://github.com/karanjagota/ReactNative-Tutor#inspiration-and-credits)
   
 
 ## Introduction
@@ -71,9 +77,9 @@ By the end of the tutorial, we would have build something like this-
 
 ## Pre-requisites: 
 To follow this tutorial, please make sure you are familiarized with JavaScript/ES6 and meet the following requirements in your local dev environment.
-- NodeJs version >= 12.x.x installed
-- Have access to one package manager such as npm or yarn
-- Expo-cli version installed or use npm
+- [x] NodeJs version >= 12.x.x installed
+- [x] Have access to one package manager such as npm or yarn
+- [x] Expo-cli version installed or use npm
 
 However, steps to set up the dev environment exist below.
 
@@ -207,7 +213,7 @@ It is for containing an Xcode project and the code required to bootstrap the app
 It is for containing the Android-related code to bootstrap the app for android devices. Since we are using expo-cli, we will not see the folder in our starter project.
 
 #### App Registry
-AppRegistory is the Js entry point to run a React Native Application. App Component or any other root component in the app should register by using App Registry.registerComponent such that the native system can load the bundle of the app and run the app by starting the AppRegistory.runApplication() method.
+AppRegistory is the Js entry point to run a React Native Application. App Component or any other root component in the app should register by using <b>AppRegistry.registerComponent</b> such that the native system can load the bundle of the app and run the app by starting the <b>AppRegistory.runApplication()</b> method.
 
 
 ### Run The App
@@ -224,11 +230,14 @@ Clicking on the link, Metro Bundler will open in the browser.
 
 #### Install Expo and Test App
 
-We will also need to install the Expo app on the ios and Android phone to test our mobile app. After installing from the App Store and Google Play Store by clicking on the link below
+We will also need to install the Expo app on the ios and Android phone to test our mobile app. After installing from the App Store and Google Play Store by clicking on the link below.
+
 Google PlayStore: <a href="https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en_US&gl=US">Download Expo Client</a>  
 Apple AppStore:  <a href="https://apps.apple.com/us/app/expo-client/id982107779"> Download Expo Client</a>
 
-connect it with the same wireless network. Open the app and scan the QR code that appears in the Metro Bundler to test the app.
+connect it with the same wireless network. 
+
+Open the app and scan the QR code that appears in the Metro Bundler to test the app.
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/exposcan.png?raw=true "Title")
 
@@ -260,7 +269,7 @@ Apart from these built-in components, we can create our custom components, or we
 
 Let us look at how to use these components one by one in detail-
 
-<i>Simply make the respective changes in the app.js file to learn the building blocks of React Native and get the desired result.</i> 
+***Simply make the respective changes in the app.js file to learn the building blocks of React Native and get the desired result.***
 
 ### View, StyleSheet and Text
 
@@ -556,7 +565,6 @@ const styles = StyleSheet.create({
 #### Explanation
 In the above code snippet, We import a hook, UseState provided by the React library to manage the state. We have declared a state called name whose initial value is assigned to be null and attached a method called setName that updates its state value every time the input text is changed. The above is a typical coding style to implement a hook in React Native.  
 
-
 ## Building the UI of ReactNative Tutor
 
 Up till now, we have briefly discussed the concepts and code paradigms required to create ReactNativeTutor. In this part, we will build the real and same UI as that of the app shown above by developing the first two screens of the app.  
@@ -608,7 +616,6 @@ export default function Home() {
     {title: "Find React Jobs",source:require("../assets/raw_images/undraw_hire.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
     {title:"Code Snippets",source:require("../assets/raw_images/undraw_source_code.png"),info:"Powered by Wit.ai, find code snippets for your next ReactNative project.",id:4},
     {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:5}
-  
   ]
 
     const CARD_COMPONENT = (props)=> {
@@ -712,7 +719,9 @@ export default function App() {
 <gif>
 
 
-### Navigation In React Native
+## Navigation In React Native
+In this part, we will briefly discuss React Navigation, a third-party open-source library for routing and navigating in the ReactNative Apps. It has more than 18k stars on Github, and almost everyone I know in the ReactNative community has heard and used it at some point in their project.
+
 Navigating through screens is a necessary part of any mobile application. It is vital for every mobile application. We all can agree with that, I am sure. However, for mobile applications, React Native does not provide a standard way or approach to solving the problem of navigating through different screens. Therefore, there are various options out there on the web to get the job done. 
 
 #### Different Navigation Solutions
@@ -731,124 +740,165 @@ It is a powerful library that provides different types of navigation options lik
 - Bottom Tab Navigator
 - Material Top Tab Navigator and many more. 
 
-In here, we will briefly discuss <b>React Navigation</b>, a third-party open-source library for routing and navigating in the ReactNative Apps.  It has more than 18k stars on Github, and almost everyone I know in the ReactNative community has heard and used it at some point in their project. We will implement a Simple Stack Navigator, the one that React Native Tutor app also uses. So without wasting any more second, let us get started.
+### About Stack Navigator 
+In Stack Navigator, we place a new screen on top of a stack. ReactNative Tutor uses a StackNavigator as a navigator solution to navigate through different screens. So now, we will add it to the app to navigate from the home screen to the component screen. 
 
-#### Stack Navigator 
-In StackNavigator, we place a new screen on top of a stack in StackNavigator. ReactNative Tutor uses a StackNavigator as a navigator solution to navigate through different screens. So, we will try to replicate it in this tutorial. 
+### Installing ReactNavigation
+We need to install a few libraries before moving forward. These libraries are required to run ReactNavigation smoothly in our app. Run the following commands in the terminal-  
 
-#### Example
-
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/nav-snap.png?raw=true "Title")
-
-#### Code 
 ```
+npm add @react-navigation/native
+npm add react-native-reanimated react-native-gesture-handler react-native-screens 
+npm add react-native-safe-area-context @react-native-community/masked-view
+```
+
+Now let us add navigation into our app.
+
+* Create a new folder 'routes' in the root directory of the app and add the home.js file into it. 
+
+* Copy the below code and add it to the home.js file of the routes folder.
+
+```javascript
 import * as React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-
-// Screen 1 ( Home )
-function Home({ navigation }) {
-  
-  // Route to About Screen Component
-  const presshandler = {navigation.push('About')} 
-  
-  return(
-    <View>
-      <Text> Home1 </Text>
-      <Button 
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
-            title='Move To About Screen'
-            onPress={presshandler} />
-    </View>  )}
-
-// Screen 2 ( About )    
-function About({ navigation }) {
-  return(
-    <View>
-      <Text> About Screen </Text>
-    </View>  )}
+import Home from '../screens/home';
+import Component from '../screens/component';
 
 const HomeStack = createStackNavigator();
 
-// Creating a Stack Navigator ..    
-function MyStack(){
+export default function MyStack(){
     return(
       <NavigationContainer>  
         <HomeStack.Navigator>
-        <HomeStack.Screen name="Home"  component={Home} />
-        <HomeStack.Screen name="About" component={About}  />
+        <HomeStack.Screen title="React Native Tutor" name="Home" component={Home} options={{headerTitle:"React Native Tutor"}}  />
+        <HomeStack.Screen name="Component" component={Component} options={{headerTitle:"Learn React Native"}}/>
         </HomeStack.Navigator>
-      </NavigationContainer>);}
-
-export default function App() {
-  return ( <MyStack />);}
+      </NavigationContainer>
+    );
+}
 ```
 
-#### Explanation
-In the above code snippet, we have created a Stack Navigator using the React Navigation library. 
+* In App.js, replace the code with the code found below- 
 
-Home is the 1st screen of the app. 
-About is the 2nd screen of the app.
+```javascript
+import * as React from 'react';
+import MyStack from './routes/home';
 
-The Home screen contains a simple view with text and button. On button click, one can navigate to the About screen by using the React Navigations navigate.push() method. 
+export default function App() {
+  return (
+      <MyStack />
+  );
+}
+```
 
-We pass navigation props to all components of the app, keeping track of screens in the entire app.  
+Now every screen and component will get a navigation prop that will help you to move between the screens through various built-in functions like push() and pop(), but will also be used to pass data around between the screens.
 
-### Top React Native Packages To Boost Developer Productivity 
-Developers all around the world use open-source libraries in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. I am sure about the fact that almost every app on the Google play store and Apple App Store use at least one open-source library. If not, then I feel sorry for the developer. Even I have used two open-source libraries in ReactNative Tutor:
+* In home.js of the screens folder, copy the code below 
 
-- React Native Elements
-- React Navigation
+```javascript
+import * as React from 'react';
+import { Text, ScrollView } from 'react-native';
+import { Card, Button } from 'react-native-elements';
 
-Here, we will discuss the top 5 React Native libraries that are widely used by Developers in their React Native projects. 
+export default function Home({ navigation }) {
+   
+    const data = [
+        {title: "About ReactNative",source:require("../assets/raw_images/reactlogo.png"),info:"Learn About the basics of React Native, Why you should use react Native .. ", id:1},
+        {title: "Learn React Native (Step By Step)",source:require("../assets/raw_images/ab.png"),info:"Learn About the nuts and bolts of react native components .. How to create components and more .", id:2},
+        {title: "Find React Jobs",source:require("../assets/raw_images/jobs.png"),info:"Find New Everyday React Jobs and Apply Online Instantaneously.", id:3},
+        {title:"Code Snippets",source:require("../assets/raw_images/undraw_source_code.png"),info:"Powered by Wit.ai, find code snippets for your next ReactNative project.",id:4},
+        {title: "Generate Bundle & Deploy",source:require("../assets/raw_images/dply.png"),info:"Learn How to deploy app on Google play store and Apple App Store", id:5}
+      ]
+  
+    const presshandler = (id)=>{
+            navigation.push('Component');
+    }
+    const CARD_COMPONENT = (props)=> {
+      return(
+        <Card>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Divider/>
+        <Card.Image source={props.source} />
+        <Text style={{marginBottom: 8}}>
+            {props.info}
+        </Text>
+        <Button 
+            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0,backgroundColor:"#6C63FF"}}
+              title='Learn More' id ={props.id} onPress={()=> presshandler(props.id)}/>
+            
+        </Card>);
+  }
+    
+    return (
+        <ScrollView>
+        <CARD_COMPONENT title={data[0].title} source={data[0].source} info={data[0].info} id={data[0].id} />
+        <CARD_COMPONENT title={data[1].title} source={data[1].source} info={data[1].info} id={data[1].id} />
+        <CARD_COMPONENT title={data[2].title} source={data[2].source} info={data[2].info} id={data[2].id} />
+        <CARD_COMPONENT title={data[3].title} source={data[3].source} info={data[3].info} id={data[3].id} />
+        <CARD_COMPONENT title={data[4].title} source={data[4].source} info={data[4].info} id={data[4].id} />
+      </ScrollView>
+    );
+  }
+```
 
-#### React Native Elements
-It is a cross-platform UI toolkit for React Native. It has more than 19.6k stars on GitHub and provides a useful set of reusable components for React Native applications. 
+* The output should appear the same as the below gif - 
 
-Link: <a href="https://github.com/react-native-elements/react-native-elements">https://github.com/react-native-elements/react-native-elements</a>
+<add image>
 
-#### React Navigation
-Navigation is an essential part of every application. React Native does not provide a standard way to navigate through screens in the applications. Therefore, there are many routing and navigation libraries out there on the web. React Navigation is one of them. Honestly, It's the best I have used up till now. It has more than 18k stars on Github.
+## Congrats and Next Steps 
+:thumbsup: :thumbsup: Congrats!! Now you have developed the first two screens of ReactNativeTutor. 
 
-Link: <a href="https://github.com/react-navigation/react-navigation">https://github.com/react-navigation/react-navigation</a>
+However, it is not the end. It is just the beginning of developing the ReactNativeTutor. React Native Tutor is a big project, and it is impossible to cover everything in this tutorial. But, I am sure of the fact that by now, you have learned the skills and concepts required to understand this repository. 
 
-#### React Native Animatable
-Every app needs Animation. It makes a mobile app visually appealing. It is the easiest way to make an app not only cool but also enhances the user experience. From Onboarding screens to laying out the layouts on the screen, it is used almost everywhere in the app. React Native Animatable is one of them. It has more than 8k stars on Github and provides easy to use animations for React Native applications.  
+So as a DIY, I asked you to download or fork this repository and learn the rest by reading the source code of this project.
 
-Link: <a href="https://github.com/oblador/react-native-animatable">https://github.com/oblador/react-native-animatable</a>
+Before downloading, Let us know a little more about ReactNative Tutor
 
-#### React Native Localize
-The library provides the simplest and easiest way to internationalize the React Native app. With more than 1.3K stars on Github, it helps developers localize the app. 
-
-Link: <a href="https://github.com/zoontek/react-native-localize">https://github.com/zoontek/react-native-localize</a>
-
-#### Prop Types
-Prop-types is a package that allows developers to add runtime type checking to the components that ensure the types of props passed to Components are correct. It is genuinely a useful package that enhances my development experience. It has more than 3.6k stars on Github. 
-
-Link: <a href="https://github.com/facebook/prop-types">https://github.com/facebook/prop-types</a>
-
-Apart from the above, there are tons of other useful libraries out there on the web. Search on your own according to your own need. We can also develop a library if something is not available already. 
-
-## ReactNative Tutor
+## A closer look into ReactNative Tutor
 If you like the above tutorial, then you would love React Native Tutor. A full-fledged mobile app for aspiring developers who want to learn React Native. Features of the app include - 
 
 - More than 10+ step by step written tutorials (beginner to advanced) along with examples and code (embedded private Github Gists) that help people become React Native Ninja. 
 
 - Exclusive tutorial on topics like Async Storage and Permissions and Deploying React Native app on Google Play Store and Apple App Store
 
+- Exclusive tutorial on topics like ES6 Essentials, Animations and Wit.ai
+
 - Find New React Jobs (worldwide) every day and Apply online instantaneously.  
+
+- Find Quick Coding Snippets for your React Native Project. A feature powered by Wit.ai.  
 
 - Beautiful UI   
 
-#### How to Start the app 
+### How to Start the app 
+
+ReactNative Tutor uses Wit.ai for fetching Code Snippets. Therefore, it requires a web token that one needs to generate from the Wit.ai official website. I have added a tutorial on creating the NLP based Wit.ai API Endpoint on the ReactNativeTutor Web App. Once you have made the API, follow the steps below to start the app- 
+
+* Download or Fork the Repository.
+
+* Download the node modules and packages required to run the app by typing the below command 
 
 ```
-npm install 
-npm start 
+npm install.  
 ```
 
-## Inspiration 
-I started this repository as a tutorial, which later converted into a full-fledged React Native app. All of this was possible because of the open-source libraries that have been developed by the React Native community and React Native official documentation. Do check them out - 
+* Create a .env file in the root directory of the project.
+
+* Add the key in place of xxxxx
+
+```
+SECRET_KEY = xxxxxxxxxxxxxxxxx
+```
+
+* Run the app by typing the following command in the terminal-
+
+```
+npm start
+```
+That's it! That's how you develop and run a ReactNative Project. I hope you had fun. 
+
+## Inspiration and Credits 
+I started this repository as a tutorial, which later converted into a full-fledged React Native app. All of this was possible because of unDraw and the open-source libraries that have been developed by the React Native community and React Native official documentation. Do check them out - 
 
 #### Expo 
 <a href="https://docs.expo.io">Link: https://docs.expo.io/</a>
@@ -865,27 +915,14 @@ I started this repository as a tutorial, which later converted into a full-fledg
 #### WebView
 <a href="https://github.com/react-native-webview/react-native-webview">Link: https://github.com/react-native-webview/react-native-webview</a>
 
+#### unDraw
+<a href="https://undraw.co/">Link: https://undraw.co/</a>
+
 #### Github Gists
 <a href="https://gist.github.com/">Link: https://gist.github.com/<a>
   
 #### Github Jobs Api 
 <a href="https://jobs.github.com/api">Link: https://jobs.github.com/api</a>
 
-  
 #### React Native Documentation 
 <a href="https://reactnative.dev/">Link: https://reactnative.dev/ </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
