@@ -30,6 +30,8 @@ If you are familiar with Node.js and want to contribute to this repository, or i
     * [Props, State and Hooks](https://github.com/karanjagota/ReactNative-Tutor#props-state-and-hooks)
   - [Building the UI of ReactNative Tutor](https://github.com/karanjagota/ReactNative-Tutor#building-the-ui-of-reactnative-tutor)
   - [Navigation In React Native](https://github.com/karanjagota/ReactNative-Tutor#navigation-in-react-native)
+    * [Why ReactNavigation?](https://github.com/karanjagota/ReactNative-Tutor#why-reactnavigation?)
+    * [About Stack Navigator](https://github.com/karanjagota/ReactNative-Tutor#about-stack-navigator)
 * [Congrats and Next Steps](https://github.com/karanjagota/ReactNative-Tutor#congrats-and-next-steps)
 * [A closer look into ReactNative Tutor](https://github.com/karanjagota/ReactNative-Tutor#a-closer-look-into-reactnative-tutor)
 * [Inspiration and Credits](https://github.com/karanjagota/ReactNative-Tutor#inspiration-and-credits)
@@ -69,8 +71,8 @@ In a simple language, ReactNative allows us to build mobile applications that lo
 The below tutorial has four parts, where, by the end of each, you will learn a new React Native concept. They are as follows-
 * [Setting up the Development Environment and Starting the new ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#setting-up-the-development-environment)
 * [Building Blocks of ReactNative](https://github.com/karanjagota/ReactNative-Tutor#building-blocks-of-reactnative)
-* [Implementing Third-party Libraries in ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#aim-of-the-tutorial)
-* [Navigation in ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#aim-of-the-tutorial)      
+* [Implementing Third-party Libraries in ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#building-the-ui-of-reactnative-tutor)
+* [Navigation in ReactNative App (Stack Navigator)](https://github.com/karanjagota/ReactNative-Tutor#navigation-in-react-native)      
 
 By the end of the tutorial, we would have build something like this- 
 <End Product add image>
@@ -380,7 +382,7 @@ The above code snippet is pretty much self-explanatory.
 First, we import the module ScrollView from the react-native library. Next, we create a function-based component where we add Views to the ScrollView Component. In the above code, we add list items to the ScrollView Component with an array with the help of JSX. We pass style as a prop to the text component that takes an object created using the StyleSheet component.  
 
 ### Image and Dimensions
-<i>Replace the assets folder with the one found in the Link:<a href="https://github.com/karanjagota/ReactNative-Tutor/tree/main/assets">Download Assets</a></i>
+***Replace the assets folder with the one found in the Link: <a href="https://github.com/karanjagota/ReactNative-Tutor/tree/main/assets">Download Assets</a>***
 
 #### Image
 It is a component that provides a way to display images on the screen. It supports images from any format. One can get the picture from either the local storage or the network. 
