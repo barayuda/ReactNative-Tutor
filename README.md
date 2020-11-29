@@ -74,9 +74,6 @@ The below tutorial has four parts, where, by the end of each, you will learn a n
 * [Implementing Third-party Libraries in ReactNative App](https://github.com/karanjagota/ReactNative-Tutor#building-the-ui-of-reactnative-tutor)
 * [Navigation in ReactNative App (Stack Navigator)](https://github.com/karanjagota/ReactNative-Tutor#navigation-in-react-native)      
 
-By the end of the tutorial, we would have build something like this- 
-<End Product add image>
-
 ## Pre-requisites: 
 To follow this tutorial, please make sure you are familiarized with JavaScript/ES6 and meet the following requirements in your local dev environment.
 - [x] NodeJs version >= 12.x.x installed
@@ -118,7 +115,8 @@ expo init ReactNativeTutor
 ```
 
 Select the blank template, as clean as an empty canvas template as shown in the image below-
-<Add Image For Template>
+
+![Expo Blank Template](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/expoblank.png?raw=true "Title")
   
 ```
 cd ReactNativeTutor   
@@ -129,7 +127,7 @@ Open the folder in VS code editor.
 
 Let's look at the file structure and understand each file and folder one by one.
 
-![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/file_structure.png?raw=true "Title")
+![File Structure](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/file_structure.png?raw=true "Title")
 
 #### App.js 
 The first file in any react native app that is the entry point of the app development process. Whatever you write inside this file, it will get displayed on mobile devices.
@@ -584,7 +582,7 @@ Link: https://github.com/react-native-elements/react-native-elements
 React Native WebView is a modern, well-supported, and cross-platform WebView for React Native. It is a replacement for the built-in WebView that React Native provides. 
 Link: https://github.com/react-native-webview/react-native-webview
 
-<i>Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages. </i>
+***Developers all around the world use open-source libraries/packages in their software and applications. It not only helps developers to complete their day-to-day work on time but, to the most extent, improves their developing experience. So, always remember, there is no shame in downloading extra packages. ***
 
 We can add both the libraries into our project using npm by typing the following commands in the terminal. 
 
@@ -665,7 +663,10 @@ export default function App() {
 ```
 
 * Run the app. The output should appear similar to the gif below. 
-<gif>
+
+<p align="center">
+  <img src="https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/gif_folder/homegif.gif" alt="Home Gif" />
+</p>
 
 Similarly,We will create the second screen of our app. 
 
@@ -718,9 +719,11 @@ export default function App() {
 }
 ```
 
-* After making the changes, Press ctrl+save. We will get an output similar to the one shown below.
-<gif>
+* After making the changes, Press ctrl+save. We will get an output similar to the one shown in the gif below.
 
+<p align="center">
+  <img src="https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/gif_folder/componentgif.gif" alt="Home and Component Gif" />
+</p>
 
 ## Navigation In React Native
 In this part, we will briefly discuss React Navigation, a third-party open-source library for routing and navigating in the ReactNative Apps. It has more than 18k stars on Github, and almost everyone I know in the ReactNative community has heard and used it at some point in their project.
@@ -846,7 +849,9 @@ export default function Home({ navigation }) {
 
 * The output should appear the same as the below gif - 
 
-<add image>
+<p align="center">
+  <img src="https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/gif_folder/fullgif.gif" alt="App Gif" />
+</p>
 
 ## Congrats and Next Steps 
 :thumbsup: :thumbsup: Congrats!! Now you have developed the first two screens of ReactNativeTutor. 
