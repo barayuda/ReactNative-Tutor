@@ -898,7 +898,7 @@ npm start
 That's it! That's how you develop and run a ReactNative Project. I hope you had fun. 
 
 ## Inspiration and Credits 
-I started this repository as a tutorial, which later converted into a full-fledged React Native app. All of this was possible because of unDraw and the open-source libraries that have been developed by the React Native community and React Native official documentation. Do check them out - 
+I started this repository as a tutorial, which later converted into a full-fledged React Native app. All of this was possible because of unDraw, Wit.ai and the open-source libraries that have been developed by the React Native community and React Native official documentation. Do check them out - 
 
 #### Expo 
 <a href="https://docs.expo.io">Link: https://docs.expo.io/</a>
@@ -917,6 +917,9 @@ I started this repository as a tutorial, which later converted into a full-fledg
 
 #### unDraw
 <a href="https://undraw.co/">Link: https://undraw.co/</a>
+
+#### Wit.ai
+<a href="https://wit.ai/">Link: https://wit.ai/</a>
 
 #### Github Gists
 <a href="https://gist.github.com/">Link: https://gist.github.com/<a>
