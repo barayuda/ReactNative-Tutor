@@ -90,7 +90,7 @@ To dive deeply into the React Natives ecosystem, we need to install a few things
 ReactNative uses NodeJs, a JavaScript runtime, to build our Javascript code. If you don't have Nodejs installed already, you can get it from its official website. Link: <a href="https://nodejs.org/">https://nodejs.org/</a>
 
 ### Node Package Manager
-npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, with which developers can download all npm software packages that contain in the npm software registry. When we download Node.js, we automatically get npm installed on our computer.
+npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, with which developers can download all npm software packages that contain in the npm software registry. When we download Node.js, we automatically get npm installed on our computer. I have added a tutorial to create the first node.js app using npm in the <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
 
 ### CLI
 There are two ways to develop our mobile app in ReactNative. We can do it with the help of either the <b>Expo CLI</b> or <b>ReactNative CLI</b>.
