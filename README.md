@@ -587,8 +587,8 @@ Link: https://github.com/react-native-webview/react-native-webview
 We can add both the libraries into our project using npm by typing the following commands in the terminal. 
 
 ```
-npm add react-native-elements
-npm add react-native-webview
+npm install react-native-elements
+npm install react-native-webview
 ```
 
 You are also required to download the raw_images folder from this repository and add it in the assets directory.
@@ -753,9 +753,9 @@ In Stack Navigator, we place a new screen on top of a stack. ReactNative Tutor u
 We need to install a few libraries before moving forward. These libraries are required to run ReactNavigation smoothly in our app. Run the following commands in the terminal-  
 
 ```
-npm add @react-navigation/native
-npm add react-native-reanimated react-native-gesture-handler react-native-screens 
-npm add react-native-safe-area-context @react-native-community/masked-view
+npm install @react-navigation/native
+npm install react-native-reanimated react-native-gesture-handler react-native-screens 
+npm install react-native-safe-area-context @react-native-community/masked-view
 ```
 
 Now let us add navigation into our app.
