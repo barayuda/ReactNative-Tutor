@@ -76,9 +76,10 @@ The below tutorial has four parts, where, by the end of each, you will learn a n
 
 ## Pre-requisites: 
 To follow this tutorial, please make sure you are familiarized with JavaScript/ES6 and meet the following requirements in your local dev environment.
-- [x] NodeJs version >= 12.x.x installed
+- [x] NodeJs
 - [x] Have access to one package manager such as npm or yarn
 - [x] Expo-cli version installed or use npm
+- [x] Visual Studio Code Editor
 
 However, steps to set up the dev environment exist below.
 
