@@ -214,7 +214,7 @@ It is for containing an Xcode project and the code required to bootstrap the app
 It is for containing the Android-related code to bootstrap the app for android devices. Since we are using expo-cli, we will not see the folder in our starter project.
 
 #### App Registry
-AppRegistory is the Js entry point to run a React Native Application. App Component or any other root component in the app should register by using <b>AppRegistry.registerComponent</b> such that the native system can load the bundle of the app and run the app by starting the <b>AppRegistory.runApplication()</b> method.
+AppRegistory is the Js entry point to run a React Native Application. App Component or any other root component in the app should register by using <b>AppRegistry.registerComponent</b> such that the native system can load the bundle of the app and run the app by starting the <b>AppRegistory.runApplication()</b> method. Again, Expo handles this for us. 
 
 
 ### Run The App
