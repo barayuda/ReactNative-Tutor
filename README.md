@@ -2,7 +2,10 @@
 ### How I Developed React Native Tutor (One stop destination to learn React Native)
 
 Youtube Video link : <a href="https://youtu.be/5EuYVzsHaWc"> React Native Tutor</a> 
-Web link : <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
+Web link : <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App</a>
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ce99578-a074-41a0-a8bf-5d0f4a7a1165/deploy-status)](https://app.netlify.com/sites/inspiring-goldberg-6c4aee/deploys)  ![GitHub](https://img.shields.io/github/license/karanjagota/ReactNative-Tutor?color=blue)  ![GitHub Repo stars](https://img.shields.io/github/stars/karanjagota/ReactNative-Tutor) ![Twitter Follow](https://img.shields.io/twitter/follow/IamKaranJagota)
 
 ![Alt text](https://github.com/karanjagota/ReactNative-Tutor/blob/main/assets/raw_images/snapshots/rectutor-logo.png?raw=true "Title")
 
@@ -90,7 +93,7 @@ To dive deeply into the React Natives ecosystem, we need to install a few things
 ReactNative uses NodeJs, a JavaScript runtime, to build our Javascript code. If you don't have Nodejs installed already, you can get it from its official website. Link: <a href="https://nodejs.org/">https://nodejs.org/</a>
 
 ### Node Package Manager
-npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, with which developers can download all npm software packages that contain in the npm software registry. When we download Node.js, we automatically get npm installed on our computer. I have added a tutorial to create the first node.js app using npm in the <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
+npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command-line client, also called npm, with which developers can download all npm software packages that contain in the npm software registry. When we download Node.js, we automatically get npm installed on our computer. I have added a tutorial to create the first node.js app using npm in the <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App</a>
 
 ### CLI
 There are two ways to develop our mobile app in ReactNative. We can do it with the help of either the <b>Expo CLI</b> or <b>ReactNative CLI</b>.
@@ -880,7 +883,7 @@ If you like the above tutorial, then you would love React Native Tutor. A full-f
 
 ### How to Start the app 
 
-ReactNative Tutor uses Wit.ai for fetching Code Snippets. Therefore, it requires a web token that one needs to generate from the Wit.ai official website. I have added a tutorial on creating the NLP based Wit.ai API Endpoint on the <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App.</a> Once you have made the API, follow the steps below to start the app- 
+ReactNative Tutor uses Wit.ai for fetching Code Snippets. Therefore, it requires a web token that one needs to generate from the Wit.ai official website. I have added a tutorial on creating the NLP based Wit.ai API Endpoint on the <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App.</a> Once you have made the API, follow the steps below to start the app- 
 
 * Download or Fork the Repository.
 
