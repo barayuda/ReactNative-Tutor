@@ -1,9 +1,9 @@
-# How To Develop Mobile App using React Native
-### How I Developed React Native Tutor (One stop destination to learn React Native)
+# How To Develop Mobile App using React Native  <a href='https://play.google.com/store/apps/details?id=com.reactnativetutor&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width='120' height='50' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>  
+### How I Developed React Native Tutor (One stop destination to learn React Native) 
 
 Youtube Video link : <a href="https://youtu.be/5EuYVzsHaWc"> React Native Tutor</a> 
 Web link : <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App</a>
-
+Android link : <a href="https://play.google.com/store/apps/details?id=com.reactnativetutor"> ReactNative Tutor Android App </a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ce99578-a074-41a0-a8bf-5d0f4a7a1165/deploy-status)](https://app.netlify.com/sites/inspiring-goldberg-6c4aee/deploys)  ![GitHub](https://img.shields.io/github/license/karanjagota/ReactNative-Tutor?color=blue)  ![GitHub Repo stars](https://img.shields.io/github/stars/karanjagota/ReactNative-Tutor) ![Twitter Follow](https://img.shields.io/twitter/follow/IamKaranJagota)
 
@@ -11,8 +11,12 @@ Web link : <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web 
 
 ## Recommended Way to View React Native Tutor
 
-<i>If you have a Non-Tech Background or are unfamiliar with Node.js, interested in learning and knowing more about developing mobile apps using ReactNative, then I would highly suggest you first check out ReactNative Tutor Web App by clicking on the link below.   
-Web link : <a href="https://inspiring-goldberg-6c4aee.netlify.app/"> React Native Tutor Web App</a>
+<i>If you have a Non-Tech Background or are unfamiliar with Node.js, interested in learning and knowing more about developing mobile apps using ReactNative, then I would highly suggest you first check out ReactNative Tutor Web App and Android App by clicking on the link below.   
+Web link : <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App</a>
+Android link : <a href="https://play.google.com/store/apps/details?id=com.reactnativetutor">ReactNative Tutor Android App </a>
+
+***Note:
+The app is 10MB in Size and is ad-free. I have tested the app on MiMax2 and Samsung M31. Please raise an issue here if the app crashes on any other android device. Don't give fewer stars for it :pray: :pray:. Constructive criticisms and Pull requests are always welcome.***   
   
 If you are familiar with Node.js and want to contribute to this repository, or is interested in developing the first two screens of the ReactNative Tutor mobile app in a step by step manner, then please go on reading.</i>
 
