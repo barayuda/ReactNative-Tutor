@@ -1,9 +1,9 @@
-# How To Develop Mobile App using React Native  <a href='https://play.google.com/store/apps/details?id=com.reactnativetutor&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width='120' height='50' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>  
+# How To Develop Mobile App using React Native
 ### How I Developed React Native Tutor (One stop destination to learn React Native) 
 
-Youtube Video link : <a href="https://youtu.be/5EuYVzsHaWc"> React Native Tutor</a> 
-Web link : <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App</a>
-Android link : <a href="https://play.google.com/store/apps/details?id=com.reactnativetutor"> ReactNative Tutor Android App </a>
+Youtube Video : <a href="https://youtu.be/5EuYVzsHaWc"> React Native Tutor</a> 
+Web : <a href="https://www.reactnativetutor.tech/"> React Native Tutor Web App</a>
+Android : <a href="https://play.google.com/store/apps/details?id=com.reactnativetutor"> ReactNative Tutor Android App </a>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ce99578-a074-41a0-a8bf-5d0f4a7a1165/deploy-status)](https://app.netlify.com/sites/inspiring-goldberg-6c4aee/deploys)  ![GitHub](https://img.shields.io/github/license/karanjagota/ReactNative-Tutor?color=blue)  ![GitHub Repo stars](https://img.shields.io/github/stars/karanjagota/ReactNative-Tutor) ![Twitter Follow](https://img.shields.io/twitter/follow/IamKaranJagota)
 
